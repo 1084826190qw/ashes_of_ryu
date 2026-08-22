@@ -109,3 +109,9 @@ InitTestScene*.unity*
 # VS Code
 .vscode/
 *.slnx
+
+# Herramientas locales / temporales
+.opencode/
+opencode.json
+ProjectSettings/McpUnitySettings.json
+Assets/_Recovery/

@@ -1,0 +1,704 @@
+{
+ "frames": {
+  "Elder Dragon Hatchling Sprite Sheet (Flight) 0.ase": {
+   "frame": {
+    "x": 1,
+    "y": 7,
+    "w": 64,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 52
+   },
+   "duration": 100
+  },
+  "Elder Dragon Hatchling Sprite Sheet (Flight) 1.ase": {
+   "frame": {
+    "x": 65,
+    "y": 7,
+    "w": 63,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 63,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 63,
+    "h": 52
+   },
+   "duration": 100
+  },
+  "Elder Dragon Hatchling Sprite Sheet (Flight) 2.ase": {
+   "frame": {
+    "x": 128,
+    "y": 7,
+    "w": 62,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 62,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 62,
+    "h": 52
+   },
+   "duration": 100
+  },
+  "Elder Dragon Hatchling Sprite Sheet (Flight) 3.ase": {
+   "frame": {
+    "x": 193,
+    "y": 7,
+    "w": 62,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 62,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 62,
+    "h": 52
+   },
+   "duration": 100
+  },
+  "Elder Dragon Hatchling Sprite Sheet (Flight) 4.ase": {
+   "frame": {
+    "x": 257,
+    "y": 7,
+    "w": 62,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 62,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 62,
+    "h": 52
+   },
+   "duration": 100
+  },
+  "Elder Dragon Hatchling Sprite Sheet (Flight) 5.ase": {
+   "frame": {
+    "x": 323,
+    "y": 7,
+    "w": 56,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 56,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 56,
+    "h": 52
+   },
+   "duration": 100
+  },
+  "Elder Dragon Hatchling Sprite Sheet (Attack) 0.ase": {
+   "frame": {
+    "x": 1,
+    "y": 69,
+    "w": 64,
+    "h": 50
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 50
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 50
+   },
+   "duration": 100
+  },
+  "Elder Dragon Hatchling Sprite Sheet (Attack) 1.ase": {
+   "frame": {
+    "x": 65,
+    "y": 69,
+    "w": 63,
+    "h": 50
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 63,
+    "h": 50
+   },
+   "sourceSize": {
+    "w": 63,
+    "h": 50
+   },
+   "duration": 100
+  },
+  "Elder Dragon Hatchling Sprite Sheet (Attack) 2.ase": {
+   "frame": {
+    "x": 128,
+    "y": 69,
+    "w": 62,
+    "h": 50
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 62,
+    "h": 50
+   },
+   "sourceSize": {
+    "w": 62,
+    "h": 50
+   },
+   "duration": 100
+  },
+  "Elder Dragon Hatchling Sprite Sheet (Attack) 3.ase": {
+   "frame": {
+    "x": 193,
+    "y": 69,
+    "w": 62,
+    "h": 50
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 62,
+    "h": 50
+   },
+   "sourceSize": {
+    "w": 62,
+    "h": 50
+   },
+   "duration": 100
+  },
+  "Elder Dragon Hatchling Sprite Sheet (Attack) 4.ase": {
+   "frame": {
+    "x": 257,
+    "y": 69,
+    "w": 62,
+    "h": 50
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 62,
+    "h": 50
+   },
+   "sourceSize": {
+    "w": 62,
+    "h": 50
+   },
+   "duration": 100
+  },
+  "Elder Dragon Hatchling Sprite Sheet (Damage) 0.ase": {
+   "frame": {
+    "x": 1,
+    "y": 139,
+    "w": 64,
+    "h": 50
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 50
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 50
+   },
+   "duration": 100
+  },
+  "Elder Dragon Hatchling Sprite Sheet (Damage) 1.ase": {
+   "frame": {
+    "x": 65,
+    "y": 139,
+    "w": 63,
+    "h": 50
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 63,
+    "h": 50
+   },
+   "sourceSize": {
+    "w": 63,
+    "h": 50
+   },
+   "duration": 100
+  },
+  "Elder Dragon Hatchling Sprite Sheet (Damage) 2.ase": {
+   "frame": {
+    "x": 128,
+    "y": 139,
+    "w": 62,
+    "h": 50
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 62,
+    "h": 50
+   },
+   "sourceSize": {
+    "w": 62,
+    "h": 50
+   },
+   "duration": 100
+  },
+  "Elder Dragon Hatchling Sprite Sheet (Damage) 3.ase": {
+   "frame": {
+    "x": 193,
+    "y": 139,
+    "w": 62,
+    "h": 50
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 62,
+    "h": 50
+   },
+   "sourceSize": {
+    "w": 62,
+    "h": 50
+   },
+   "duration": 100
+  },
+  "Elder Dragon Hatchling Sprite Sheet (Damage) 4.ase": {
+   "frame": {
+    "x": 257,
+    "y": 139,
+    "w": 62,
+    "h": 50
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 62,
+    "h": 50
+   },
+   "sourceSize": {
+    "w": 62,
+    "h": 50
+   },
+   "duration": 100
+  },
+  "Elder Dragon Hatchling Sprite Sheet (Damage) 5.ase": {
+   "frame": {
+    "x": 323,
+    "y": 139,
+    "w": 56,
+    "h": 50
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 56,
+    "h": 50
+   },
+   "sourceSize": {
+    "w": 56,
+    "h": 50
+   },
+   "duration": 100
+  },
+  "Elder Dragon Hatchling Sprite Sheet (Fall) 0.ase": {
+   "frame": {
+    "x": 1,
+    "y": 207,
+    "w": 64,
+    "h": 44
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 44
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 44
+   },
+   "duration": 100
+  },
+  "Elder Dragon Hatchling Sprite Sheet (Fall) 1.ase": {
+   "frame": {
+    "x": 65,
+    "y": 207,
+    "w": 63,
+    "h": 44
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 63,
+    "h": 44
+   },
+   "sourceSize": {
+    "w": 63,
+    "h": 44
+   },
+   "duration": 100
+  },
+  "Elder Dragon Hatchling Sprite Sheet (Fall) 2.ase": {
+   "frame": {
+    "x": 128,
+    "y": 207,
+    "w": 62,
+    "h": 44
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 62,
+    "h": 44
+   },
+   "sourceSize": {
+    "w": 62,
+    "h": 44
+   },
+   "duration": 100
+  },
+  "Elder Dragon Hatchling Sprite Sheet (Fall) 3.ase": {
+   "frame": {
+    "x": 193,
+    "y": 207,
+    "w": 62,
+    "h": 44
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 62,
+    "h": 44
+   },
+   "sourceSize": {
+    "w": 62,
+    "h": 44
+   },
+   "duration": 100
+  },
+  "Elder Dragon Hatchling Sprite Sheet (Fall) 4.ase": {
+   "frame": {
+    "x": 257,
+    "y": 207,
+    "w": 62,
+    "h": 44
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 62,
+    "h": 44
+   },
+   "sourceSize": {
+    "w": 62,
+    "h": 44
+   },
+   "duration": 100
+  },
+  "Elder Dragon Hatchling Sprite Sheet (Fall) 5.ase": {
+   "frame": {
+    "x": 323,
+    "y": 207,
+    "w": 56,
+    "h": 44
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 56,
+    "h": 44
+   },
+   "sourceSize": {
+    "w": 56,
+    "h": 44
+   },
+   "duration": 100
+  },
+  "Elder Dragon Hatchling Sprite Sheet (Death) 0.ase": {
+   "frame": {
+    "x": 1,
+    "y": 279,
+    "w": 64,
+    "h": 42
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 42
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 42
+   },
+   "duration": 100
+  },
+  "Elder Dragon Hatchling Sprite Sheet (Death) 1.ase": {
+   "frame": {
+    "x": 65,
+    "y": 279,
+    "w": 63,
+    "h": 42
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 63,
+    "h": 42
+   },
+   "sourceSize": {
+    "w": 63,
+    "h": 42
+   },
+   "duration": 100
+  },
+  "Elder Dragon Hatchling Sprite Sheet (Death) 2.ase": {
+   "frame": {
+    "x": 128,
+    "y": 279,
+    "w": 62,
+    "h": 42
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 62,
+    "h": 42
+   },
+   "sourceSize": {
+    "w": 62,
+    "h": 42
+   },
+   "duration": 100
+  },
+  "Elder Dragon Hatchling Sprite Sheet (Death) 3.ase": {
+   "frame": {
+    "x": 193,
+    "y": 279,
+    "w": 62,
+    "h": 42
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 62,
+    "h": 42
+   },
+   "sourceSize": {
+    "w": 62,
+    "h": 42
+   },
+   "duration": 100
+  },
+  "Elder Dragon Hatchling Sprite Sheet (Sitting Idle) 0.ase": {
+   "frame": {
+    "x": 1,
+    "y": 345,
+    "w": 64,
+    "h": 39
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 39
+   },
+   "sourceSize": {
+    "w": 64,
+    "h": 39
+   },
+   "duration": 100
+  },
+  "Elder Dragon Hatchling Sprite Sheet (Sitting Idle) 1.ase": {
+   "frame": {
+    "x": 65,
+    "y": 345,
+    "w": 63,
+    "h": 39
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 63,
+    "h": 39
+   },
+   "sourceSize": {
+    "w": 63,
+    "h": 39
+   },
+   "duration": 100
+  },
+  "Elder Dragon Hatchling Sprite Sheet (Sitting Idle) 2.ase": {
+   "frame": {
+    "x": 128,
+    "y": 345,
+    "w": 62,
+    "h": 39
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 62,
+    "h": 39
+   },
+   "sourceSize": {
+    "w": 62,
+    "h": 39
+   },
+   "duration": 100
+  },
+  "Elder Dragon Hatchling Sprite Sheet (Sitting Idle) 3.ase": {
+   "frame": {
+    "x": 193,
+    "y": 345,
+    "w": 62,
+    "h": 39
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 62,
+    "h": 39
+   },
+   "sourceSize": {
+    "w": 62,
+    "h": 39
+   },
+   "duration": 100
+  },
+  "Elder Dragon Hatchling Sprite Sheet (Sitting Idle) 4.ase": {
+   "frame": {
+    "x": 257,
+    "y": 345,
+    "w": 62,
+    "h": 39
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 62,
+    "h": 39
+   },
+   "sourceSize": {
+    "w": 62,
+    "h": 39
+   },
+   "duration": 100
+  },
+  "Elder Dragon Hatchling Sprite Sheet (Sitting Idle) 5.ase": {
+   "frame": {
+    "x": 323,
+    "y": 345,
+    "w": 56,
+    "h": 39
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 56,
+    "h": 39
+   },
+   "sourceSize": {
+    "w": 56,
+    "h": 39
+   },
+   "duration": 100
+  }
+ },
+ "meta": {
+  "size": {
+   "w": 384,
+   "h": 384
+  },
+  "scale": "1"
+ }
+}

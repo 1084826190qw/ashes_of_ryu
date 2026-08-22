@@ -1,0 +1,972 @@
+fileFormatVersion: 2
+guid: ee9ff139e324d655482131c1358306e0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4588516178940553908
+    second: Elder Dragon Hatchling Sprite Sh_0
+  - first:
+      213: -3077376481008406405
+    second: Elder Dragon Hatchling Sprite Sh_1
+  - first:
+      213: 4442775225635084215
+    second: Elder Dragon Hatchling Sprite Sh_2
+  - first:
+      213: -3484892385422542202
+    second: Elder Dragon Hatchling Sprite Sh_3
+  - first:
+      213: -5610110777821961118
+    second: Elder Dragon Hatchling Sprite Sh_4
+  - first:
+      213: 7126844343079719870
+    second: Elder Dragon Hatchling Sprite Sh_5
+  - first:
+      213: 8263315002680553402
+    second: Elder Dragon Hatchling Sprite Sh_6
+  - first:
+      213: -8927348558296091449
+    second: Elder Dragon Hatchling Sprite Sh_7
+  - first:
+      213: -8495714224868791347
+    second: Elder Dragon Hatchling Sprite Sh_8
+  - first:
+      213: -862234093329779730
+    second: Elder Dragon Hatchling Sprite Sh_9
+  - first:
+      213: -4385209032037866030
+    second: Elder Dragon Hatchling Sprite Sh_10
+  - first:
+      213: 8620402526087739026
+    second: Elder Dragon Hatchling Sprite Sh_11
+  - first:
+      213: -3573508733440622802
+    second: Elder Dragon Hatchling Sprite Sh_12
+  - first:
+      213: 7418767583502346780
+    second: Elder Dragon Hatchling Sprite Sh_13
+  - first:
+      213: 4231453775428179239
+    second: Elder Dragon Hatchling Sprite Sh_14
+  - first:
+      213: 8208725055831452502
+    second: Elder Dragon Hatchling Sprite Sh_15
+  - first:
+      213: -5344343517028886646
+    second: Elder Dragon Hatchling Sprite Sh_16
+  - first:
+      213: -6473933288009386863
+    second: Elder Dragon Hatchling Sprite Sh_17
+  - first:
+      213: -6569688597455924793
+    second: Elder Dragon Hatchling Sprite Sh_18
+  - first:
+      213: 904873644377410110
+    second: Elder Dragon Hatchling Sprite Sh_19
+  - first:
+      213: 6773092657631364768
+    second: Elder Dragon Hatchling Sprite Sh_20
+  - first:
+      213: 4525356982169210870
+    second: Elder Dragon Hatchling Sprite Sh_21
+  - first:
+      213: -1343471854870769890
+    second: Elder Dragon Hatchling Sprite Sh_22
+  - first:
+      213: -5244775387751821435
+    second: Elder Dragon Hatchling Sprite Sh_23
+  - first:
+      213: 7629965481050881217
+    second: Elder Dragon Hatchling Sprite Sh_24
+  - first:
+      213: 6793369264827609410
+    second: Elder Dragon Hatchling Sprite Sh_25
+  - first:
+      213: -7278068347235820344
+    second: Elder Dragon Hatchling Sprite Sh_26
+  - first:
+      213: 3782408739883493800
+    second: Elder Dragon Hatchling Sprite Sh_27
+  - first:
+      213: -2394259588558050774
+    second: Elder Dragon Hatchling Sprite Sh_28
+  - first:
+      213: 6554172913489008849
+    second: Elder Dragon Hatchling Sprite Sh_29
+  - first:
+      213: 8318786879829822577
+    second: Elder Dragon Hatchling Sprite Sh_30
+  - first:
+      213: -7716844394052051311
+    second: Elder Dragon Hatchling Sprite Sh_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 328
+        width: 56
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ba62eb572fadaf30800000000000000
+      internalID: 4588516178940553908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 326
+        width: 58
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b703a592566fa45d0800000000000000
+      internalID: -3077376481008406405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_2
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 324
+        width: 60
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b792e46788e7ad30800000000000000
+      internalID: 4442775225635084215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_3
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 332
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68afc66d6dc23afc0800000000000000
+      internalID: -3484892385422542202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_4
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 330
+        width: 56
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 264e451a8f1e422b0800000000000000
+      internalID: -5610110777821961118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_5
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 330
+        width: 56
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb3d4ce9b23a7e260800000000000000
+      internalID: 7126844343079719870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 264
+        width: 56
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abf2ee9c6313da270800000000000000
+      internalID: 8263315002680553402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_7
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 264
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c47aac09cfab1480800000000000000
+      internalID: -8927348558296091449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_8
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 264
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcb6679bce8291a80800000000000000
+      internalID: -8495714224868791347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_9
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 264
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee3f8d119aab804f0800000000000000
+      internalID: -862234093329779730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_10
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 264
+        width: 56
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d56c838e9b9423c0800000000000000
+      internalID: -4385209032037866030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 194
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 296f654bc62d1a770800000000000000
+      internalID: 8620402526087739026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_12
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 194
+        width: 60
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2ff38d7db8586ec0800000000000000
+      internalID: -3573508733440622802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_13
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 200
+        width: 58
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1a27d59fc1c4f660800000000000000
+      internalID: 7418767583502346780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_14
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 198
+        width: 58
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 725d1ef1ac429ba30800000000000000
+      internalID: 4231453775428179239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_15
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 198
+        width: 62
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65baea352ff3be170800000000000000
+      internalID: 8208725055831452502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_16
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 202
+        width: 56
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a87d4d503e315d5b0800000000000000
+      internalID: -5344343517028886646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 132
+        width: 62
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 194bf9499f7f726a0800000000000000
+      internalID: -6473933288009386863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_18
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 132
+        width: 58
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c194bf3707c3d4a0800000000000000
+      internalID: -6569688597455924793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_19
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 132
+        width: 62
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3a8abb09c1ce8c00800000000000000
+      internalID: 904873644377410110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_20
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 132
+        width: 58
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a68ce003ebdefd50800000000000000
+      internalID: 6773092657631364768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_21
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 132
+        width: 62
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ff870ce23c4dce30800000000000000
+      internalID: 4525356982169210870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_22
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 132
+        width: 58
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1f41bc47770b5de0800000000000000
+      internalID: -1343471854870769890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 62
+        width: 62
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58f4756a290d637b0800000000000000
+      internalID: -5244775387751821435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_24
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 62
+        width: 68
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ccb7820e2513e960800000000000000
+      internalID: 7629965481050881217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_25
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 63
+        width: 62
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2413b128a55e64e50800000000000000
+      internalID: 6793369264827609410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_26
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 56
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cc9ef7266b1ffa90800000000000000
+      internalID: -7278068347235820344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_27
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 58
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a9a61875b0dd7430800000000000000
+      internalID: 3782408739883493800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_28
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 0
+        width: 56
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2aacebe691e5ced0800000000000000
+      internalID: -2394259588558050774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_29
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 0
+        width: 56
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d8dff01a8915fa50800000000000000
+      internalID: 6554172913489008849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_30
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 0
+        width: 56
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17ccf66a794427370800000000000000
+      internalID: 8318786879829822577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_31
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 0
+        width: 56
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19e1091c8e248e490800000000000000
+      internalID: -7716844394052051311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elder Dragon Hatchling Sprite Sh_32
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 62
+        width: 63
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 539ae7992e2bc45b499b22b983b3e256
+      internalID: -37285121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3966559ca9fa2cfd7b08a3715f75cb8e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Elder Dragon Hatchling Sprite Sh_0: 4588516178940553908
+      Elder Dragon Hatchling Sprite Sh_1: -3077376481008406405
+      Elder Dragon Hatchling Sprite Sh_10: -4385209032037866030
+      Elder Dragon Hatchling Sprite Sh_11: 8620402526087739026
+      Elder Dragon Hatchling Sprite Sh_12: -3573508733440622802
+      Elder Dragon Hatchling Sprite Sh_13: 7418767583502346780
+      Elder Dragon Hatchling Sprite Sh_14: 4231453775428179239
+      Elder Dragon Hatchling Sprite Sh_15: 8208725055831452502
+      Elder Dragon Hatchling Sprite Sh_16: -5344343517028886646
+      Elder Dragon Hatchling Sprite Sh_17: -6473933288009386863
+      Elder Dragon Hatchling Sprite Sh_18: -6569688597455924793
+      Elder Dragon Hatchling Sprite Sh_19: 904873644377410110
+      Elder Dragon Hatchling Sprite Sh_2: 4442775225635084215
+      Elder Dragon Hatchling Sprite Sh_20: 6773092657631364768
+      Elder Dragon Hatchling Sprite Sh_21: 4525356982169210870
+      Elder Dragon Hatchling Sprite Sh_22: -1343471854870769890
+      Elder Dragon Hatchling Sprite Sh_23: -5244775387751821435
+      Elder Dragon Hatchling Sprite Sh_24: 7629965481050881217
+      Elder Dragon Hatchling Sprite Sh_25: 6793369264827609410
+      Elder Dragon Hatchling Sprite Sh_26: -7278068347235820344
+      Elder Dragon Hatchling Sprite Sh_27: 3782408739883493800
+      Elder Dragon Hatchling Sprite Sh_28: -2394259588558050774
+      Elder Dragon Hatchling Sprite Sh_29: 6554172913489008849
+      Elder Dragon Hatchling Sprite Sh_3: -3484892385422542202
+      Elder Dragon Hatchling Sprite Sh_30: 8318786879829822577
+      Elder Dragon Hatchling Sprite Sh_31: -7716844394052051311
+      Elder Dragon Hatchling Sprite Sh_32: -37285121
+      Elder Dragon Hatchling Sprite Sh_4: -5610110777821961118
+      Elder Dragon Hatchling Sprite Sh_5: 7126844343079719870
+      Elder Dragon Hatchling Sprite Sh_6: 8263315002680553402
+      Elder Dragon Hatchling Sprite Sh_7: -8927348558296091449
+      Elder Dragon Hatchling Sprite Sh_8: -8495714224868791347
+      Elder Dragon Hatchling Sprite Sh_9: -862234093329779730
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
