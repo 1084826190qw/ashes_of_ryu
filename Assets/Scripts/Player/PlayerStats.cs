@@ -6,7 +6,7 @@ namespace AshesOfRyu
     public class PlayerStats
     {
         public float maxHealth = 100f;
-        public float moveSpeed = 3.4f;
+        public float moveSpeed = 2.9f;
 
         public float clawDamage = 16f;
         public float clawRange = 3.4f;

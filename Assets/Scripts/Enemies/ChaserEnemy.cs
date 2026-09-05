@@ -17,7 +17,7 @@ namespace AshesOfRyu
         public static ChaserEnemy Create(Vector2 pos, Transform parent)
         {
             var enemy = Spawn<ChaserEnemy>("EspectroDelBosque", pos, parent, new Color(0.55f, 0.1f, 0.45f), 0.32f, 3);
-            enemy.moveSpeed = 2.1f;
+            enemy.moveSpeed = 1.75f;
             enemy.ContactDamage = 12f;
             enemy.MemoryDropChance = 35;
             return enemy;

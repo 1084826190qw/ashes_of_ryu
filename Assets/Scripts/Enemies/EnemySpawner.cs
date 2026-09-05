@@ -12,6 +12,10 @@ namespace AshesOfRyu
         private float spawnTimer;
         private int runIndex;
 
+        // Tiempo de exploracion sin enemigos: la hada acompana a Ryu al inicio.
+        private const float FirstRunExploreTime = 35f;
+        private const float RespawnExploreTime = 8f;
+
         private readonly List<Enemy> alive = new List<Enemy>();
 
         public void Configure(Transform parent, Vector2 center, float halfW, float halfH)
@@ -27,9 +31,7 @@ namespace AshesOfRyu
         {
             ClearAll();
             runIndex = deaths;
-            spawnTimer = 1.2f;
-            int count = 1 + Mathf.Min(runIndex, 6);
-            for (int i = 0; i < count; i++) SpawnRandom();
+            spawnTimer = deaths <= 0 ? FirstRunExploreTime : RespawnExploreTime;
         }
 
         public void ClearAll()

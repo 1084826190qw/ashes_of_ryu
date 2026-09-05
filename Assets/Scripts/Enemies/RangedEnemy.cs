@@ -42,7 +42,7 @@ namespace AshesOfRyu
         public static RangedEnemy Create(Vector2 pos, Transform parent)
         {
             var enemy = Spawn<RangedEnemy>("Acechador", pos, parent, new Color(0.2f, 0.35f, 0.7f), 0.32f, 3);
-            enemy.moveSpeed = 1.6f;
+            enemy.moveSpeed = 1.35f;
             enemy.ContactDamage = 8f;
             enemy.MemoryDropChance = 30;
             return enemy;

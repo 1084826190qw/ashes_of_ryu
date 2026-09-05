@@ -28,6 +28,7 @@ namespace AshesOfRyu
             ArenaBuilder.Build(transform, out float halfW, out float halfH, out Vector2 spawn);
 
             var player = BuildPlayer(spawn);
+            FairyCompanion.Create(transform, player.transform);
 
             var spawner = new GameObject("EnemySpawner").AddComponent<EnemySpawner>();
             spawner.Configure(transform, Vector2.zero, halfW, halfH);
@@ -59,6 +60,7 @@ namespace AshesOfRyu
 
             var sr = go.AddComponent<SpriteRenderer>();
             sr.sortingOrder = 4;
+            go.transform.localScale = Vector3.one * 1.3f;
 
             var rb = go.AddComponent<Rigidbody2D>();
             rb.gravityScale = 0f;

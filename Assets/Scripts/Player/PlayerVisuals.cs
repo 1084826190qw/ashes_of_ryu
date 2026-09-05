@@ -9,6 +9,9 @@ namespace AshesOfRyu
         private readonly Color furyColor = new Color(1.3f, 0.5f, 0.5f);
         private readonly Color dragonColor = new Color(1.2f, 0.9f, 0.6f);
 
+        // Ryu es el personaje principal: un poco mas grande que el resto del mundo.
+        private const float BaseScale = 1.3f;
+
         private SpriteRenderer sr;
         private PlayerAnimator animator;
         private bool dragonForm;
@@ -35,7 +38,7 @@ namespace AshesOfRyu
         public void SetDragonForm(bool active)
         {
             dragonForm = active;
-            transform.localScale = Vector3.one * (active ? 1.45f : 1f);
+            transform.localScale = Vector3.one * (active ? BaseScale * 1.45f : BaseScale);
             ApplyColor();
             if (animator != null)
             {

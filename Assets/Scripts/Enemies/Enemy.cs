@@ -12,7 +12,7 @@ namespace AshesOfRyu
 
         protected SpriteRenderer sr;
         protected Rigidbody2D rb;
-        protected float moveSpeed = 1.8f;
+        protected float moveSpeed = 1.5f;
         protected int MemoryDropChance = 30;
 
         private Vector2 knockback;

@@ -38,6 +38,8 @@ namespace AshesOfRyu
             AddTreeObstacle(parent, new Vector2(12f, -6f));
 
             AddBorderTrees(parent, halfW, halfH, rng);
+
+            FogAnimator.CreateLayer(parent, halfW * 2f + 2f, 0.5f, 5f);
         }
 
         private static void BuildFloor(Transform parent, float halfW, float halfH, System.Random rng)
