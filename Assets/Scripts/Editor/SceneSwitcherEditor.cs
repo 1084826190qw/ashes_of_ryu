@@ -10,7 +10,16 @@ namespace AshesOfRyu.EditorTools
         {
             if (EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo())
             {
-                EditorSceneManager.OpenScene("Assets/Scenes/MainMenu.unity");
+                EditorSceneManager.OpenScene("Assets/Scenes/2_scene_menu.unity");
+            }
+        }
+
+        [MenuItem("Scenes/Cinematic (Cinemática)")]
+        public static void OpenCinematic()
+        {
+            if (EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo())
+            {
+                EditorSceneManager.OpenScene("Assets/Scenes/3_scene_cinematic.unity");
             }
         }
 
@@ -19,7 +28,7 @@ namespace AshesOfRyu.EditorTools
         {
             if (EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo())
             {
-                EditorSceneManager.OpenScene("Assets/Scenes/SampleScene.unity");
+                EditorSceneManager.OpenScene("Assets/Scenes/4_scene_game.unity");
             }
         }
     }
