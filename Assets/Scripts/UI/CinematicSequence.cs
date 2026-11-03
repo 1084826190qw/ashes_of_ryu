@@ -32,6 +32,11 @@ namespace AshesOfRyu
         [SerializeField] private CinematicSlide[] slides;
         [SerializeField] private Image[] slideImages;
 
+        [Header("Efectos por diapositiva")]
+        [SerializeField] private GameObject[] slideEffects;
+        [Tooltip("Índice desde 0 de la diapositiva que muestra estos efectos.")]
+        [SerializeField] private int effectsSlideIndex = 6;
+
         [Header("Narración")]
         [SerializeField] private Text narrationText;
 
@@ -39,14 +44,13 @@ namespace AshesOfRyu
         [SerializeField] private Image fadeOverlay;
 
         [Header("Música")]
-        [SerializeField] private AudioSource musicSource;
         [SerializeField] private AudioClip music;
         [Range(0f, 1f)]
         [SerializeField] private float musicVolume = 0.7f;
 
         [Header("Tiempos")]
         [Tooltip("Duración del crossfade entre imágenes (transición lenta).")]
-        [SerializeField] private float imageFadeDuration = 1.5f;
+        [SerializeField] private float imageFadeDuration = 0.35f;
         [SerializeField] private float textFadeIn = 0.8f;
         [SerializeField] private float textFadeOut = 0.8f;
         [SerializeField] private float textStartDelay = 0.2f;
@@ -63,6 +67,7 @@ namespace AshesOfRyu
         private bool _advance;
         private bool _ending;
         private int _lastAdvanceFrame = -1;
+        private static AudioSource _sharedMusicSource;
 
         private void Awake()
         {
@@ -73,18 +78,29 @@ namespace AshesOfRyu
             }
 
             if (fadeOverlay != null)
-                SetAlpha(fadeOverlay, 0f);
+            {
+                SetAlpha(fadeOverlay, 1f);
+                PrepareFadeOverlay();
+            }
 
+            PrepareCanvas();
             if (slideImages != null)
             {
                 foreach (Image image in slideImages)
                     if (image != null)
                         SetAlpha(image, 0f);
             }
+
+            SetSlideEffectsVisible(false);
         }
 
         private void Start()
         {
+            ResolveSlideImages();
+            PrepareNarrationLayering();
+            if (slides == null || slides.Length == 0)
+                return;
+
             StartCoroutine(Play());
         }
 
@@ -121,31 +137,124 @@ namespace AshesOfRyu
 
         private IEnumerator Play()
         {
-            if (musicSource != null && music != null)
+            AudioSource activeMusicSource = StartMusic();
+            if (fadeOverlay != null)
             {
-                musicSource.clip = music;
-                musicSource.loop = false;
-                musicSource.volume = musicVolume;
-                musicSource.Play();
+                fadeOverlay.color = Color.black;
+                SetAlpha(fadeOverlay, 1f);
+                fadeOverlay.raycastTarget = false;
             }
+            yield return FadeGraphic(fadeOverlay, 1f, 0f, Mathf.Max(imageFadeDuration * 0.7f, 0.5f));
 
             for (int i = 0; i < slides.Length && !_skip; i++)
                 yield return PlaySlide(i);
 
-            // Fundido a negro final y bajada de la música (sin saltar, para que quede suave).
+            string destinationScene = _skip ? "4_scene_game" : nextScene;
             _ending = true;
             _skip = false;
             _advance = false;
 
-            yield return FadeGraphic(fadeOverlay, 0f, 1f, endFadeDuration);
-            yield return FadeMusic(musicSource, musicVolume, 0f, endFadeDuration);
+            if (destinationScene != "4_scene_game")
+            {
+                ScreenFader.Instance.FadeToScene(destinationScene, 0.22f);
+            }
+            else
+            {
+                if (fadeOverlay != null)
+                {
+                    fadeOverlay.color = Color.black;
+                    fadeOverlay.raycastTarget = true;
+                }
+                yield return FadeGraphic(fadeOverlay, 0f, 1f, endFadeDuration);
+                if (activeMusicSource != null)
+                {
+                    yield return FadeMusic(activeMusicSource, activeMusicSource.volume, 0f, endFadeDuration);
+                    activeMusicSource.Stop();
+                    Destroy(activeMusicSource.gameObject);
+                    _sharedMusicSource = null;
+                }
+                SceneManager.LoadScene(destinationScene);
+            }
+        }
 
-            SceneManager.LoadScene(nextScene);
+        private void ResolveSlideImages()
+        {
+            if (slides == null || slides.Length == 0)
+            {
+                Debug.LogError("[CinematicSequence] No hay diapositivas configuradas.", this);
+                return;
+            }
+
+            var sceneImages = FindObjectsOfType<Image>(true);
+            var resolved = new Image[slides.Length];
+            for (int i = 0; i < slides.Length; i++)
+            {
+                if (slideImages != null && i < slideImages.Length)
+                    resolved[i] = slideImages[i];
+
+                if (resolved[i] == null && slides[i].image != null)
+                {
+                    foreach (Image candidate in sceneImages)
+                    {
+                        if (candidate != null && candidate.sprite == slides[i].image)
+                        {
+                            resolved[i] = candidate;
+                            break;
+                        }
+                    }
+                }
+
+                if (resolved[i] == null)
+                {
+                    Debug.LogError("[CinematicSequence] No se encontró una Image para la diapositiva " +
+                                   (i + 1) + ".", this);
+                    continue;
+                }
+
+                resolved[i].sprite = slides[i].image;
+                resolved[i].gameObject.SetActive(true);
+                SetAlpha(resolved[i], 0f);
+            }
+
+            slideImages = resolved;
+        }
+
+        private AudioSource StartMusic()
+        {
+            if (music == null)
+            {
+                Debug.LogError("[CinematicSequence] No hay música asignada.", this);
+                return null;
+            }
+
+            if (_sharedMusicSource == null)
+            {
+                var musicObject = new GameObject("CinematicMusic");
+                _sharedMusicSource = musicObject.AddComponent<AudioSource>();
+                _sharedMusicSource.playOnAwake = false;
+                _sharedMusicSource.spatialBlend = 0f;
+                DontDestroyOnLoad(musicObject);
+            }
+
+            if (_sharedMusicSource.clip != music)
+            {
+                _sharedMusicSource.Stop();
+                _sharedMusicSource.clip = music;
+            }
+
+            _sharedMusicSource.loop = true;
+            _sharedMusicSource.volume = musicVolume;
+            if (!_sharedMusicSource.isPlaying)
+                _sharedMusicSource.Play();
+
+            return _sharedMusicSource;
         }
 
         private IEnumerator PlaySlide(int index)
         {
             _advance = false;
+            if (index != effectsSlideIndex)
+                SetSlideEffectsVisible(false);
 
             CinematicSlide slide = slides[index];
             float duration = Mathf.Max(0.1f, slide.duration);
@@ -167,11 +276,14 @@ namespace AshesOfRyu
             float elapsed = 0f;
 
             // 1) Aparece la imagen -> crossfade lento con la anterior.
-            yield return FadeGraphic(image, 0f, 1f, imageFadeDuration);
+            yield return AnimateSlideEntrance(image);
             elapsed += imageFadeDuration;
 
             // La imagen anterior ya está tapada: la apagamos.
             HidePreviousSlide(index);
+            if (slideEffects != null && slideEffects.Length > 0 &&
+                (slides.Length == 1 || index == effectsSlideIndex))
+                SetSlideEffectsVisible(true);
 
             // 2) Aparece la narración (se omite si el usuario pidió pasar de escena).
             if (!_advance)
@@ -195,6 +307,92 @@ namespace AshesOfRyu
                 yield return FadeGraphic(narrationText, 1f, 0f, textFadeOut);
             else if (narrationText != null)
                 SetAlpha(narrationText, 0f);
+        }
+
+        private void SetSlideEffectsVisible(bool visible)
+        {
+            if (slideEffects == null)
+                return;
+
+            foreach (GameObject effect in slideEffects)
+                if (effect != null && effect.activeSelf != visible)
+                    effect.SetActive(visible);
+        }
+
+        private void PrepareCanvas()
+        {
+            Canvas canvas = fadeOverlay != null
+                ? fadeOverlay.GetComponentInParent<Canvas>()
+                : GetComponentInChildren<Canvas>(true);
+
+            if (canvas != null && canvas.transform.localScale == Vector3.zero)
+                canvas.transform.localScale = Vector3.one;
+        }
+
+        private void PrepareFadeOverlay()
+        {
+            RectTransform rect = fadeOverlay.rectTransform;
+            fadeOverlay.color = Color.black;
+            fadeOverlay.raycastTarget = false;
+            rect.anchorMin = Vector2.zero;
+            rect.anchorMax = Vector2.one;
+            rect.offsetMin = Vector2.zero;
+            rect.offsetMax = Vector2.zero;
+            rect.localScale = Vector3.one;
+            rect.SetAsLastSibling();
+        }
+
+        private IEnumerator AnimateSlideEntrance(Image image)
+        {
+            if (image == null)
+            {
+                yield break;
+            }
+
+            RectTransform rect = image.rectTransform;
+            Vector2 finalPosition = rect.anchoredPosition;
+            float duration = Mathf.Max(0f, imageFadeDuration);
+            const float startingScale = 1.045f;
+            const float startingOffset = 14f;
+
+            SetAlpha(image, 1f);
+            rect.localScale = Vector3.one * startingScale;
+            rect.anchoredPosition = finalPosition + Vector2.up * startingOffset;
+
+            float elapsed = 0f;
+            while (elapsed < duration && !_skip && !_advance)
+            {
+                elapsed += Time.unscaledDeltaTime;
+                float progress = Mathf.SmoothStep(0f, 1f, Mathf.Clamp01(elapsed / duration));
+                rect.localScale = Vector3.LerpUnclamped(Vector3.one * startingScale, Vector3.one, progress);
+                rect.anchoredPosition = Vector2.LerpUnclamped(
+                    finalPosition + Vector2.up * startingOffset,
+                    finalPosition,
+                    progress);
+                yield return null;
+            }
+
+            rect.localScale = Vector3.one;
+            rect.anchoredPosition = finalPosition;
+        }
+
+        private void PrepareNarrationLayering()
+        {
+            if (narrationText == null)
+                return;
+
+            narrationText.gameObject.SetActive(true);
+            Transform narrationTransform = narrationText.transform;
+            Transform parent = narrationTransform.parent;
+            if (parent == null)
+                return;
+
+            Transform band = parent.Find("NarrationBand");
+            if (band != null)
+                narrationTransform.SetSiblingIndex(band.GetSiblingIndex() + 1);
+
+            if (fadeOverlay != null && fadeOverlay.transform.parent == parent)
+                fadeOverlay.transform.SetAsLastSibling();
         }
 
         private void HidePreviousSlide(int index)
@@ -336,3 +534,5 @@ namespace AshesOfRyu
         }
     }
 }
+
+

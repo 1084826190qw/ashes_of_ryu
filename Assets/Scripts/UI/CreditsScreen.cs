@@ -28,6 +28,9 @@ namespace AshesOfRyu
         [Tooltip("Duración del fundido de entrada al cambiar de parte, en segundos.")]
         [SerializeField] private float fadeTime = 0.18f;
 
+        [Header("Sello")]
+        [SerializeField] private Sprite sealLogo;
+
         private int _index;
         private bool _goingBack;
         private CanvasGroup _group;
@@ -44,6 +47,7 @@ namespace AshesOfRyu
             if (previousButton != null)
                 previousButton.onClick.AddListener(PreviousPage);
 
+            BuildSeal();
             _group = creditsText != null ? creditsText.GetComponent<CanvasGroup>() : null;
 
             _index = 0;
@@ -61,6 +65,34 @@ namespace AshesOfRyu
                 nextButton.onClick.RemoveListener(NextPage);
             if (previousButton != null)
                 previousButton.onClick.RemoveListener(PreviousPage);
+        }
+
+        private void BuildSeal()
+        {
+            if (sealLogo == null)
+                return;
+
+            Canvas canvas = creditsText != null ? creditsText.GetComponentInParent<Canvas>() : null;
+            if (canvas == null)
+            {
+                Debug.LogError("[CreditsScreen] No se encontró el Canvas para mostrar el sello.", this);
+                return;
+            }
+
+            var sealObject = new GameObject("CreditsSeal", typeof(RectTransform), typeof(Image));
+            var sealRect = sealObject.GetComponent<RectTransform>();
+            sealRect.SetParent(canvas.transform, false);
+            sealRect.anchorMin = new Vector2(1f, 0f);
+            sealRect.anchorMax = new Vector2(1f, 0f);
+            sealRect.pivot = new Vector2(1f, 0f);
+            sealRect.anchoredPosition = new Vector2(-400f, 140f);
+            sealRect.sizeDelta = new Vector2(220f, 168f);
+            sealRect.SetAsLastSibling();
+
+            var image = sealObject.GetComponent<Image>();
+            image.sprite = sealLogo;
+            image.preserveAspect = true;
+            image.raycastTarget = false;
         }
 
         private void Update()

@@ -20,7 +20,7 @@ namespace AshesOfRyu.EditorTools
     {
         private const string SplashPath = "Assets/Scenes/1_scene_logo.unity";
         private const string MainMenuPath = "Assets/Scenes/2_scene_menu.unity";
-        private const string CinematicPath = "Assets/Scenes/3_scene_cinematic.unity";
+        private const string CinematicPath = "Assets/Scenes/3_scene_cinematic_1.unity";
         private const string GameScenePath = "Assets/Scenes/4_scene_game.unity";
         private const string CreditsPath = "Assets/Scenes/5_scene_credits.unity";
         private const string ConfirmationPath = "Assets/Scenes/6_scene_confirmation.unity";
@@ -75,6 +75,8 @@ namespace AshesOfRyu.EditorTools
 
         // Música de la cinemática.
         private const string MusicPath = "Assets/Audio/musica_fondo.mp3";
+        private const string S001SpriteSheetPath = "Assets/S001_nyknck.png";
+        private const float S001AnimationFramesPerSecond = 5.5f;
 
         // Carpeta de las imágenes de la cinemática (ecena_1..8.jpg).
         private const string CinematicImagesFolder = "Assets/Art/Cinematic";
@@ -87,7 +89,7 @@ namespace AshesOfRyu.EditorTools
 
         // Nombres de escena (los que usa SceneManager.LoadScene).
         private const string MainMenuSceneName = "2_scene_menu";
-        private const string CinematicSceneName = "3_scene_cinematic";
+        private const string CinematicSceneName = "3_scene_cinematic_1";
         private const string GameSceneName = "4_scene_game";
         private const string CreditsSceneName = "5_scene_credits";
         private const string OptionsSceneName = "6_scene_options";
@@ -166,7 +168,7 @@ namespace AshesOfRyu.EditorTools
 
             BuildSplashScene(sprites);
             BuildMainMenuScene(sprites);
-            BuildCinematicScene();
+            BuildCinematicScenes();
             BuildCreditsScene();
             BuildConfirmationScene();
             UpdateBuildSettings();
@@ -175,7 +177,7 @@ namespace AshesOfRyu.EditorTools
             AssetDatabase.Refresh();
 
             EditorSceneManager.OpenScene(MainMenuPath, OpenSceneMode.Single);
-            Debug.Log("[Ashes] Listo: 1_scene_logo -> 2_scene_menu -> 3_scene_cinematic -> 4_scene_game -> 5_scene_credits -> 6_scene_confirmation. Sprites cargados: " + sprites.Length);
+            Debug.Log("[Ashes] Listo: 1_scene_logo -> 2_scene_menu -> 3_scene_cinematic_1..8 -> 4_scene_game -> 5_scene_credits -> 6_scene_confirmation. Sprites cargados: " + sprites.Length);
         }
 
         [MenuItem("Tools/Ashes/Open Splash Scene")]
@@ -203,7 +205,7 @@ namespace AshesOfRyu.EditorTools
 
             EditorSceneManager.SaveOpenScenes();
             EditorSceneManager.OpenScene(CinematicPath, OpenSceneMode.Single);
-            Debug.Log("[Ashes] Escena 3_scene_cinematic abierta. Pulsa Play para verla.");
+            Debug.Log("[Ashes] Escena 3_scene_cinematic_1 abierta. Pulsa Play para verla.");
         }
 
         [MenuItem("Tools/Ashes/Open Credits Scene")]
@@ -509,30 +511,43 @@ namespace AshesOfRyu.EditorTools
         // ------------------------------------------------------------- Cinemática
 
         /// <summary>
-        /// Construye la escena 3_scene_cinematic: 8 imágenes a pantalla completa (cover),
-        /// transición lenta entre ellas, narración en cursiva y música de fondo.
-        /// Al terminar carga 4_scene_game.
+        /// Construye 8 escenas cinematográficas individuales, una por imagen.
+        /// La escena penúltima (índice 6) conserva las dos animaciones de destello
+        /// (FogAnimator) que no deben moverse ni alterarse. Las demás escenas
+        /// no incluyen estas animaciones para evitar el 45% de lentitud.
         /// </summary>
-        private static void BuildCinematicScene()
+        private static void BuildCinematicScenes()
         {
-            Scene scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
-
-            CreateCamera(Color.black);
-            Canvas canvas = CreateCanvas();
-
+            // Duraciones y textos originales de la cinemática.
             int count = Mathf.Min(CinematicTexts.Length, CinematicDurations.Length);
+            float[] imageOffsets = CinematicImageOffsets;
 
-            var images = new Sprite[count];
-            var slideImages = new Image[count];
+            // Posiciones fijas de las dos animaciones en la escena penúltima.
+            float[] effectXPositions = { -305f, 387f };
+            float[] effectYPositions = { -10f, -192f };
 
             for (int i = 0; i < count; i++)
             {
-                string path = CinematicImagesFolder + "/ecena_" + (i + 1) + ".jpg";
-                Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite>(path);
+                // Cada escena tiene una imagen de la cinemática.
+                string imagePath = CinematicImagesFolder + "/ecena_" + (i + 1) + ".jpg";
+                Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite>(imagePath);
                 if (sprite == null)
-                    Debug.LogWarning("[Ashes] Falta la imagen de la cinemática: " + path);
+                {
+                    Debug.LogWarning("[Ashes] Falta la imagen de la cinemática: " + imagePath);
+                    continue;
+                }
 
-                Image image = CreateImage(canvas.transform, "Slide" + (i + 1), sprite);
+                // Nombre de la escena: 3_scene_cinematic_1 a 3_scene_cinematic_8
+                string sceneName = "3_scene_cinematic_" + (i + 1);
+                string scenePath = "Assets/Scenes/" + sceneName + ".unity";
+
+                Scene scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
+
+                CreateCamera(Color.black);
+                Canvas canvas = CreateCanvas();
+
+                // Imagen principal a pantalla completa.
+                Image image = CreateImage(canvas.transform, "Slide1", sprite);
                 image.raycastTarget = false;
                 image.type = Image.Type.Simple;
                 image.preserveAspect = false;
@@ -544,72 +559,144 @@ namespace AshesOfRyu.EditorTools
                 rt.pivot = new Vector2(0.5f, 0.5f);
 
                 CoverBackground cover = image.gameObject.AddComponent<CoverBackground>();
-                SetPrivate(cover, "verticalAlign", 0.5f);   // centrado (cover sin deformar)
-                float imageOffset = (i < CinematicImageOffsets.Length) ? CinematicImageOffsets[i] : 0f;
+                SetPrivate(cover, "verticalAlign", 0.5f);
+                float imageOffset = (i < imageOffsets.Length) ? imageOffsets[i] : 0f;
                 SetPrivate(cover, "offsetY", imageOffset);
                 SetAlpha(image, 0f);
                 cover.Apply();
 
-                images[i] = sprite;
-                slideImages[i] = image;
+                // Narración.
+                Text narration = CreateNarrationText(canvas.transform);
+
+                // Franja negra inferior.
+                Image band = CreateImage(canvas.transform, "NarrationBand", null);
+                band.raycastTarget = false;
+                band.type = Image.Type.Simple;
+                band.preserveAspect = false;
+                band.color = Color.black;
+                RectTransform bandRect = band.rectTransform;
+                bandRect.anchorMin = new Vector2(0f, 0f);
+                bandRect.anchorMax = new Vector2(1f, NarrationBandTop);
+                bandRect.offsetMin = Vector2.zero;
+                bandRect.offsetMax = Vector2.zero;
+
+                // Botón "Siguiente".
+                Button nextButton = CreateNextButton(canvas.transform);
+
+                // Music.
+                AudioClip music = AssetDatabase.LoadAssetAtPath<AudioClip>(MusicPath);
+                var managerGO = new GameObject("CinematicManager");
+                AudioSource audioSource = managerGO.AddComponent<AudioSource>();
+                audioSource.playOnAwake = false;
+                audioSource.loop = false;
+                audioSource.spatialBlend = 0f;
+                audioSource.clip = music;
+                audioSource.volume = 0.7f;
+
+                CinematicSequence sequence = managerGO.AddComponent<CinematicSequence>();
+                // Configurar slide individual.
+                var so = new SerializedObject(sequence);
+                SerializedProperty slides = so.FindProperty("slides");
+                slides.arraySize = 1;
+                SerializedProperty element = slides.GetArrayElementAtIndex(0);
+                element.FindPropertyRelative("image").objectReferenceValue = sprite;
+                element.FindPropertyRelative("text").stringValue = CinematicTexts[i];
+                element.FindPropertyRelative("duration").floatValue = CinematicDurations[i];
+                so.ApplyModifiedPropertiesWithoutUndo();
+                SetPrivate(sequence, "narrationText", narration);
+                SetPrivate(sequence, "fadeOverlay", CreateImage(canvas.transform, "FadeOverlay", null));
+                SetPrivate(sequence, "musicSource", audioSource);
+                SetPrivate(sequence, "music", music);
+                SetPrivate(sequence, "musicVolume", 0.7f);
+                SetPrivate(sequence, "imageFadeDuration", 0.6f);
+                SetPrivate(sequence, "textFadeIn", 0.8f);
+                SetPrivate(sequence, "textFadeOut", 0.8f);
+                SetPrivate(sequence, "textStartDelay", 0.2f);
+                SetPrivate(sequence, "endFadeDuration", 0.5f);
+                SetPrivate(sequence, "nextScene", (i + 1 < count) ? "3_scene_cinematic_" + (i + 2) : GameSceneName);
+                SetPrivate(sequence, "allowSkip", true);
+
+                // Efectos especiales solo en la escena penúltima (i == 6).
+                if (i == 6)  // Penúltima de 8 escenas
+                {
+                    GameObject[] slideEffects = CreateS001SlideEffects(canvas.transform);
+                    SetPrivateObjectArray(sequence, "slideEffects", slideEffects);
+                    SetPrivate(sequence, "effectsSlideIndex", 6);
+
+                    // Colocar las dos animaciones en posiciones fijas.
+                    for (int e = 0; e < slideEffects.Length; e++)
+                    {
+                        if (e < slideEffects.Length && e < effectXPositions.Length)
+                        {
+                            Image effectImg = slideEffects[e].GetComponent<Image>();
+                            if (effectImg != null)
+                            {
+                                RectTransform effectRt = effectImg.rectTransform;
+                                effectRt.anchorMin = new Vector2(0.5f, 0.5f);
+                                effectRt.anchorMax = new Vector2(0.5f, 0.5f);
+                                effectRt.pivot = new Vector2(0.5f, 0.5f);
+                                effectRt.anchoredPosition = new Vector2(effectXPositions[e], effectYPositions[e]);
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    // Sin efectos de animación en las demás escenas (evita 45% de lentitud).
+                    SetPrivateObjectArray(sequence, "slideEffects", new GameObject[0]);
+                    SetPrivate(sequence, "effectsSlideIndex", -1);
+                }
+
+                // Evento del botón.
+                EnsureEventSystem();
+                UnityEventTools.AddPersistentListener(nextButton.onClick, sequence.NextSlide);
+
+                EditorSceneManager.MarkSceneDirty(scene);
+                EditorSceneManager.SaveScene(scene, scenePath);
+
+                Debug.Log("[Ashes] Escena cinematográfica creada: " + sceneName + " (" + scenePath + ")");
             }
 
-            // Franja negra inferior donde va la narración.
-            Image band = CreateImage(canvas.transform, "NarrationBand", null);
-            band.raycastTarget = false;
-            band.type = Image.Type.Simple;
-            band.preserveAspect = false;
-            band.color = Color.black;
-            RectTransform bandRect = band.rectTransform;
-            bandRect.anchorMin = new Vector2(0f, 0f);
-            bandRect.anchorMax = new Vector2(1f, NarrationBandTop);
-            bandRect.offsetMin = Vector2.zero;
-            bandRect.offsetMax = Vector2.zero;
+            // Eliminar la escena única antigua si existe.
+            string oldPath = "Assets/Scenes/3_scene_cinematic.unity";
+            if (System.IO.File.Exists(oldPath) || AssetDatabase.LoadAssetAtPath<SceneAsset>(oldPath) != null)
+            {
+                AssetDatabase.DeleteAsset(oldPath);
+                Debug.Log("[Ashes] Escena antigua 3_scene_cinematic.unity eliminada.");
+            }
+        }
 
-            // Texto de narración en cursiva.
-            Text narration = CreateNarrationText(canvas.transform);
+        private static GameObject[] CreateS001SlideEffects(Transform parent)
+        {
+            Sprite[] frames = LoadSpritesAtPath(S001SpriteSheetPath);
+            if (frames.Length < 2)
+            {
+                Debug.LogWarning("[Ashes] No se encontraron los sprites de animación en " + S001SpriteSheetPath);
+                return new GameObject[0];
+            }
 
-            // Botón "Siguiente" (clic = pasar de escena).
-            Button nextButton = CreateNextButton(canvas.transform);
+            float[] xPositions = { -305f, 387f };
+            float[] yPositions = { -10f, -192f };
+            var effects = new GameObject[xPositions.Length];
+            for (int i = 0; i < effects.Length; i++)
+            {
+                Image image = CreateImage(parent, "Destello" + (i + 1), frames[0]);
+                image.raycastTarget = false;
+                image.preserveAspect = true;
 
-            // Overlay negro para el fundido final (encima de todo, incluido el botón).
-            Image fade = CreateImage(canvas.transform, "FadeOverlay", null);
-            fade.raycastTarget = false;
-            fade.color = new Color(0f, 0f, 0f, 0f);
-            Stretch(fade.rectTransform);
+                RectTransform rect = image.rectTransform;
+                rect.anchorMin = rect.anchorMax = new Vector2(0.5f, 0.5f);
+                rect.anchoredPosition = new Vector2(xPositions[i], yPositions[i]);
+                rect.sizeDelta = new Vector2(80f, 80f);
 
-            AudioClip music = AssetDatabase.LoadAssetAtPath<AudioClip>(MusicPath);
+                FogAnimator animator = image.gameObject.AddComponent<FogAnimator>();
+                SetPrivate(animator, "opacity", 1f);
+                SetPrivate(animator, "framesPerSecond", S001AnimationFramesPerSecond);
+                SetPrivateObjectArray(animator, "customFrames", frames);
+                effects[i] = image.gameObject;
+            }
 
-            var managerGO = new GameObject("CinematicManager");
-            AudioSource audioSource = managerGO.AddComponent<AudioSource>();
-            audioSource.playOnAwake = false;
-            audioSource.loop = false;
-            audioSource.spatialBlend = 0f;
-            audioSource.clip = music;
-            audioSource.volume = 0.7f;
-
-            CinematicSequence sequence = managerGO.AddComponent<CinematicSequence>();
-            SetCinematicSlides(sequence, images);
-            SetPrivateObjectArray(sequence, "slideImages", slideImages);
-            SetPrivate(sequence, "narrationText", narration);
-            SetPrivate(sequence, "fadeOverlay", fade);
-            SetPrivate(sequence, "musicSource", audioSource);
-            SetPrivate(sequence, "music", music);
-            SetPrivate(sequence, "musicVolume", 0.7f);
-            SetPrivate(sequence, "imageFadeDuration", 1.5f);
-            SetPrivate(sequence, "textFadeIn", 0.8f);
-            SetPrivate(sequence, "textFadeOut", 0.8f);
-            SetPrivate(sequence, "textStartDelay", 0.2f);
-            SetPrivate(sequence, "endFadeDuration", 1.2f);
-            SetPrivate(sequence, "nextScene", GameSceneName);
-            SetPrivate(sequence, "allowSkip", true);
-
-            // Botón "Siguiente" (clic = pasar de escena). También responde a Enter.
-            EnsureEventSystem();
-            UnityEventTools.AddPersistentListener(nextButton.onClick, sequence.NextSlide);
-
-            EditorSceneManager.MarkSceneDirty(scene);
-            EditorSceneManager.SaveScene(scene, CinematicPath);
+            return effects;
         }
 
         // --------------------------------------------------------------- Créditos
@@ -1110,7 +1197,12 @@ namespace AshesOfRyu.EditorTools
 
         private static Sprite[] LoadSprites()
         {
-            Object[] assets = AssetDatabase.LoadAllAssetsAtPath(SpriteSheetPath);
+            return LoadSpritesAtPath(SpriteSheetPath);
+        }
+
+        private static Sprite[] LoadSpritesAtPath(string path)
+        {
+            Object[] assets = AssetDatabase.LoadAllAssetsAtPath(path);
             var sprites = new List<Sprite>();
             foreach (Object asset in assets)
             {
@@ -1201,6 +1293,11 @@ namespace AshesOfRyu.EditorTools
 
             Image image = go.AddComponent<Image>();
             image.sprite = sprite;
+            if (name == "FadeOverlay")
+            {
+                image.color = Color.black;
+                image.raycastTarget = false;
+            }
             return image;
         }
 

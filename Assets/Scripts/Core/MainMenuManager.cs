@@ -13,7 +13,7 @@ namespace AshesOfRyu
     public class MainMenuManager : MonoBehaviour
     {
         [Header("Escenas")]
-        [SerializeField] private string playSceneName = "3_scene_cinematic";
+        [SerializeField] private string playSceneName = "3_scene_cinematic_1";
         [SerializeField] private string creditsSceneName = "5_scene_credits";
         [SerializeField] private string optionsSceneName = "6_scene_options";
         [SerializeField] private string confirmationSceneName = "6_scene_confirmation";

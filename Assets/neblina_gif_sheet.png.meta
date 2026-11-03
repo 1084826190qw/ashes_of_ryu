@@ -1,0 +1,2613 @@
+fileFormatVersion: 2
+guid: 85196a02b7c746cc8264adf758a5dd71
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 65564639800631
+    second: neblina_gif_0
+  - first:
+      213: 16797434004560
+    second: neblina_gif_1
+  - first:
+      213: 23247980736555
+    second: neblina_gif_2
+  - first:
+      213: 92018266106360
+    second: neblina_gif_3
+  - first:
+      213: 40217274347253
+    second: neblina_gif_4
+  - first:
+      213: 22094788948184
+    second: neblina_gif_5
+  - first:
+      213: 68851504383834
+    second: neblina_gif_6
+  - first:
+      213: 43870412123023
+    second: neblina_gif_7
+  - first:
+      213: 87550319106009
+    second: neblina_gif_8
+  - first:
+      213: 18316879981094
+    second: neblina_gif_9
+  - first:
+      213: 89580705363119
+    second: neblina_gif_10
+  - first:
+      213: 98752163008601
+    second: neblina_gif_11
+  - first:
+      213: 92049455060661
+    second: neblina_gif_12
+  - first:
+      213: 18709969087913
+    second: neblina_gif_13
+  - first:
+      213: 92410016146639
+    second: neblina_gif_14
+  - first:
+      213: 16976730618388
+    second: neblina_gif_15
+  - first:
+      213: 41116936075980
+    second: neblina_gif_16
+  - first:
+      213: 88340403550128
+    second: neblina_gif_17
+  - first:
+      213: 28742629406411
+    second: neblina_gif_18
+  - first:
+      213: 68988324705686
+    second: neblina_gif_19
+  - first:
+      213: 86094555154084
+    second: neblina_gif_20
+  - first:
+      213: 90346459120064
+    second: neblina_gif_21
+  - first:
+      213: 88848334539320
+    second: neblina_gif_22
+  - first:
+      213: 24500585805195
+    second: neblina_gif_23
+  - first:
+      213: 90391400832913
+    second: neblina_gif_24
+  - first:
+      213: 36442562786631
+    second: neblina_gif_25
+  - first:
+      213: 23711135044099
+    second: neblina_gif_26
+  - first:
+      213: 89427099881527
+    second: neblina_gif_27
+  - first:
+      213: 97115077649844
+    second: neblina_gif_28
+  - first:
+      213: 79862822622687
+    second: neblina_gif_29
+  - first:
+      213: 84834137493844
+    second: neblina_gif_30
+  - first:
+      213: 75525370319599
+    second: neblina_gif_31
+  - first:
+      213: 60888718935088
+    second: neblina_gif_32
+  - first:
+      213: 44962321278893
+    second: neblina_gif_33
+  - first:
+      213: 35300769207335
+    second: neblina_gif_34
+  - first:
+      213: 21520150674427
+    second: neblina_gif_35
+  - first:
+      213: 52256355389103
+    second: neblina_gif_36
+  - first:
+      213: 79679510144801
+    second: neblina_gif_37
+  - first:
+      213: 58343615603399
+    second: neblina_gif_38
+  - first:
+      213: 73169216965920
+    second: neblina_gif_39
+  - first:
+      213: 95703014107656
+    second: neblina_gif_40
+  - first:
+      213: 20303541394744
+    second: neblina_gif_41
+  - first:
+      213: 82048583479056
+    second: neblina_gif_42
+  - first:
+      213: 33216094058728
+    second: neblina_gif_43
+  - first:
+      213: 58141245349119
+    second: neblina_gif_44
+  - first:
+      213: 69349958176642
+    second: neblina_gif_45
+  - first:
+      213: 20924971798992
+    second: neblina_gif_46
+  - first:
+      213: 88545350748830
+    second: neblina_gif_47
+  - first:
+      213: 57868758049228
+    second: neblina_gif_48
+  - first:
+      213: 59283441025167
+    second: neblina_gif_49
+  - first:
+      213: 79903145541581
+    second: neblina_gif_50
+  - first:
+      213: 19678520704874
+    second: neblina_gif_51
+  - first:
+      213: 23171977363710
+    second: neblina_gif_52
+  - first:
+      213: 47993043107542
+    second: neblina_gif_53
+  - first:
+      213: 19146837885210
+    second: neblina_gif_54
+  - first:
+      213: 53575456103222
+    second: neblina_gif_55
+  - first:
+      213: 91340870048897
+    second: neblina_gif_56
+  - first:
+      213: 72718642596261
+    second: neblina_gif_57
+  - first:
+      213: 58836649997086
+    second: neblina_gif_58
+  - first:
+      213: 60025467062674
+    second: neblina_gif_59
+  - first:
+      213: 95977377093606
+    second: neblina_gif_60
+  - first:
+      213: 79480188870008
+    second: neblina_gif_61
+  - first:
+      213: 40709269373696
+    second: neblina_gif_62
+  - first:
+      213: 50453301529281
+    second: neblina_gif_63
+  - first:
+      213: 65998847102851
+    second: neblina_gif_64
+  - first:
+      213: 79878565667504
+    second: neblina_gif_65
+  - first:
+      213: 33412212824551
+    second: neblina_gif_66
+  - first:
+      213: 66527993827842
+    second: neblina_gif_67
+  - first:
+      213: 49103742089233
+    second: neblina_gif_68
+  - first:
+      213: 29271017394521
+    second: neblina_gif_69
+  - first:
+      213: 70592622424793
+    second: neblina_gif_70
+  - first:
+      213: 87437676164617
+    second: neblina_gif_71
+  - first:
+      213: 63544859891205
+    second: neblina_gif_72
+  - first:
+      213: 42478361149277
+    second: neblina_gif_73
+  - first:
+      213: 21678664278205
+    second: neblina_gif_74
+  - first:
+      213: 31290909735664
+    second: neblina_gif_75
+  - first:
+      213: 11697514252778
+    second: neblina_gif_76
+  - first:
+      213: 35664959859807
+    second: neblina_gif_77
+  - first:
+      213: 49678036368581
+    second: neblina_gif_78
+  - first:
+      213: 30499896485721
+    second: neblina_gif_79
+  - first:
+      213: 85236741485551
+    second: neblina_gif_80
+  - first:
+      213: 95823622440685
+    second: neblina_gif_81
+  - first:
+      213: 54841890987281
+    second: neblina_gif_82
+  - first:
+      213: 27664999045568
+    second: neblina_gif_83
+  - first:
+      213: 74265827547749
+    second: neblina_gif_84
+  - first:
+      213: 88712997505443
+    second: neblina_gif_85
+  - first:
+      213: 66020943696291
+    second: neblina_gif_86
+  - first:
+      213: 65466921261572
+    second: neblina_gif_87
+  - first:
+      213: 77766438684716
+    second: neblina_gif_88
+  - first:
+      213: 66356990143755
+    second: neblina_gif_89
+  - first:
+      213: 36822338115880
+    second: neblina_gif_90
+  - first:
+      213: 72011634450698
+    second: neblina_gif_91
+  - first:
+      213: 25471169287077
+    second: neblina_gif_92
+  - first:
+      213: 94543596773781
+    second: neblina_gif_93
+  - first:
+      213: 24405546121309
+    second: neblina_gif_94
+  - first:
+      213: 89766133623240
+    second: neblina_gif_95
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 2
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 8192
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: neblina_gif_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1320
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e628223afd1602f0c73bc84ca0dafe57
+      internalID: 65564639800631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_1
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 1320
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23d32521b1ad6ccb82e9c2e3cf7844c0
+      internalID: 16797434004560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_2
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 1320
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 359b7388b5ebe116fcf598e0f77fa957
+      internalID: 23247980736555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_3
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 1320
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7de310d2fedb2231d41db5b323fe5939
+      internalID: 92018266106360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_4
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 1320
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cbee786378d77780db322accfd22a4a
+      internalID: 40217274347253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_5
+      rect:
+        serializedVersion: 2
+        x: 2290
+        y: 1320
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aa39a41010fc850e342e223f119f6b2
+      internalID: 22094788948184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_6
+      rect:
+        serializedVersion: 2
+        x: 2748
+        y: 1320
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8955fff288cca3b5bec90eb084b7ab3e
+      internalID: 68851504383834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_7
+      rect:
+        serializedVersion: 2
+        x: 3206
+        y: 1320
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa6e870b9366b9b83fe59cb218b5abbe
+      internalID: 43870412123023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_8
+      rect:
+        serializedVersion: 2
+        x: 3664
+        y: 1320
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80eb1c0b1644117313686e0abeec5a02
+      internalID: 87550319106009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_9
+      rect:
+        serializedVersion: 2
+        x: 4122
+        y: 1320
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e583e6d9e644ca4b244f7409155b8c7
+      internalID: 18316879981094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_10
+      rect:
+        serializedVersion: 2
+        x: 4580
+        y: 1320
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23b187a6da2fcea638d95f6031456079
+      internalID: 89580705363119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_11
+      rect:
+        serializedVersion: 2
+        x: 5038
+        y: 1320
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 080c675e30e24a0bb225f2a54e127787
+      internalID: 98752163008601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_12
+      rect:
+        serializedVersion: 2
+        x: 5496
+        y: 1320
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6312dddb460763f4bc3d6d77a13bf68
+      internalID: 92049455060661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_13
+      rect:
+        serializedVersion: 2
+        x: 5954
+        y: 1320
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58aa3da8fba890373e82a09444f4d712
+      internalID: 18709969087913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_14
+      rect:
+        serializedVersion: 2
+        x: 6412
+        y: 1320
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e96f32e46f8a2f6addb6a92bdcf261f
+      internalID: 92410016146639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_15
+      rect:
+        serializedVersion: 2
+        x: 6870
+        y: 1320
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c181f3b98dfd0161ee893cb541962d93
+      internalID: 16976730618388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1056
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c260ef29f66d868191afe6b30d75c18
+      internalID: 41116936075980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_17
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 1056
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 318551f6a9191867d06e9300f373f84f
+      internalID: 88340403550128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_18
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 1056
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f02c93f9f339007c38603129bf41919
+      internalID: 28742629406411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_19
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 1056
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 164a198f54690f23ce0744abf06ce8a7
+      internalID: 68988324705686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_20
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 1056
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81fc61fb6b3f2186a6b98637e8dcc19a
+      internalID: 86094555154084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_21
+      rect:
+        serializedVersion: 2
+        x: 2290
+        y: 1056
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0be76b136bad484a57e55df11b8e49b9
+      internalID: 90346459120064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_22
+      rect:
+        serializedVersion: 2
+        x: 2748
+        y: 1056
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be31ac7719cb4f0c7b282227b9829217
+      internalID: 88848334539320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_23
+      rect:
+        serializedVersion: 2
+        x: 3206
+        y: 1056
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51752e9a8751b9cf754c50f49ad59695
+      internalID: 24500585805195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_24
+      rect:
+        serializedVersion: 2
+        x: 3664
+        y: 1056
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a046d543910a45a9edc4e81ef95a8a1a
+      internalID: 90391400832913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_25
+      rect:
+        serializedVersion: 2
+        x: 4122
+        y: 1056
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 969449d0ce08a891a1aafd509827bf87
+      internalID: 36442562786631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_26
+      rect:
+        serializedVersion: 2
+        x: 4580
+        y: 1056
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbfd7b6c9707b0ac9a00334338219837
+      internalID: 23711135044099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_27
+      rect:
+        serializedVersion: 2
+        x: 5038
+        y: 1056
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0272f59c5b992e25047b8466d94ad084
+      internalID: 89427099881527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_28
+      rect:
+        serializedVersion: 2
+        x: 5496
+        y: 1056
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35ac45c161f18191178d42143c15ac87
+      internalID: 97115077649844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_29
+      rect:
+        serializedVersion: 2
+        x: 5954
+        y: 1056
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bef6bbe7a14e4e2e93e0a6bf8228e28
+      internalID: 79862822622687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_30
+      rect:
+        serializedVersion: 2
+        x: 6412
+        y: 1056
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f33ca4592948e4422df9c8600cfd2af
+      internalID: 84834137493844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_31
+      rect:
+        serializedVersion: 2
+        x: 6870
+        y: 1056
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdb260fa26a21b67f5f4ba1696afb12f
+      internalID: 75525370319599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 792
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8537217aac9b2cb655cba3bb0f603ede
+      internalID: 60888718935088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_33
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 792
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f361c63d86e8ad3653c423c6ef6d59f1
+      internalID: 44962321278893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_34
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 792
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13afa2c876eb0b0a490e5955af9d8f55
+      internalID: 35300769207335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_35
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 792
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d56021e2b8ffd0194f403210b4e0953b
+      internalID: 21520150674427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_36
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 792
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a579b6220a0bb9e5c3c60bb384c52679
+      internalID: 52256355389103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_37
+      rect:
+        serializedVersion: 2
+        x: 2290
+        y: 792
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41ea2279e02fa5797355392d7c6ee6e1
+      internalID: 79679510144801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_38
+      rect:
+        serializedVersion: 2
+        x: 2748
+        y: 792
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38833fbfd1ba16f053848b772c0a933f
+      internalID: 58343615603399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_39
+      rect:
+        serializedVersion: 2
+        x: 3206
+        y: 792
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77edecd30b9a8c196d05d5b399b71aaf
+      internalID: 73169216965920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_40
+      rect:
+        serializedVersion: 2
+        x: 3664
+        y: 792
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfaeff7521a870e58a24b51fa8b732c3
+      internalID: 95703014107656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_41
+      rect:
+        serializedVersion: 2
+        x: 4122
+        y: 792
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 028e2d440e8d5ffbd6a7e045b10b7aa5
+      internalID: 20303541394744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_42
+      rect:
+        serializedVersion: 2
+        x: 4580
+        y: 792
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a678ca767396dc363bc5578f93b748af
+      internalID: 82048583479056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_43
+      rect:
+        serializedVersion: 2
+        x: 5038
+        y: 792
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f10635131807d60e53ac7e49b05db033
+      internalID: 33216094058728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_44
+      rect:
+        serializedVersion: 2
+        x: 5496
+        y: 792
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f02c35430006712669d5840327700983
+      internalID: 58141245349119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_45
+      rect:
+        serializedVersion: 2
+        x: 5954
+        y: 792
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 647b08f7644839188c8f1cd016d84183
+      internalID: 69349958176642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_46
+      rect:
+        serializedVersion: 2
+        x: 6412
+        y: 792
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d5999c4093e0ccca5f57cc4973a0e01
+      internalID: 20924971798992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_47
+      rect:
+        serializedVersion: 2
+        x: 6870
+        y: 792
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25112c542f0138ee03a6e01c01325a2d
+      internalID: 88545350748830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 528
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cb1d68632559cd80fc173682f9928c9
+      internalID: 57868758049228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_49
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 528
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d1f0ced71f7dd2988f4d90995d383d6
+      internalID: 59283441025167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_50
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 528
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2065b98a8e2791943213f35ef100dd7
+      internalID: 79903145541581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_51
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 528
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82a90610cd4339ca8b6f537111b6d01f
+      internalID: 19678520704874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_52
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 528
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c234b9656286ff540b51abfd7ecd8119
+      internalID: 23171977363710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_53
+      rect:
+        serializedVersion: 2
+        x: 2290
+        y: 528
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a1fd3c1fb93a250eb8cefd580533503
+      internalID: 47993043107542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_54
+      rect:
+        serializedVersion: 2
+        x: 2748
+        y: 528
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 874cfe4f9ca7fdb6088d69ec224516ba
+      internalID: 19146837885210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_55
+      rect:
+        serializedVersion: 2
+        x: 3206
+        y: 528
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2db990100804484f215f3f2192646d26
+      internalID: 53575456103222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_56
+      rect:
+        serializedVersion: 2
+        x: 3664
+        y: 528
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98df65909357132fe82411d1a9ef1b33
+      internalID: 91340870048897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_57
+      rect:
+        serializedVersion: 2
+        x: 4122
+        y: 528
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd49a048fbf7de0efc0339497af4fc9d
+      internalID: 72718642596261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_58
+      rect:
+        serializedVersion: 2
+        x: 4580
+        y: 528
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cde56eec798ee2abc4da9652684286f2
+      internalID: 58836649997086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_59
+      rect:
+        serializedVersion: 2
+        x: 5038
+        y: 528
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1765446e60a325e1173da12c7da70e8
+      internalID: 60025467062674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_60
+      rect:
+        serializedVersion: 2
+        x: 5496
+        y: 528
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 194235c148a1f81fa7a734e4aabe1e20
+      internalID: 95977377093606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_61
+      rect:
+        serializedVersion: 2
+        x: 5954
+        y: 528
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25d5ed54da9410b85f5c96477e010efe
+      internalID: 79480188870008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_62
+      rect:
+        serializedVersion: 2
+        x: 6412
+        y: 528
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f0f668d4aeb9e631858f67de0609382
+      internalID: 40709269373696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_63
+      rect:
+        serializedVersion: 2
+        x: 6870
+        y: 528
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ead719285a261d42780ec6c96b3d2c4
+      internalID: 50453301529281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 264
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9084a9f61d49e03e6f043d181d1215b
+      internalID: 65998847102851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_65
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 264
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab230bde1aa2bddcbc9046fdd3b80e95
+      internalID: 79878565667504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_66
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 264
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2aa10662a6b1a2d23cfaf24829e542e
+      internalID: 33412212824551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_67
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 264
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4025ae8e61768a4437533ed54d2b749e
+      internalID: 66527993827842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_68
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 264
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6352ac5320f0600ad74ebbfa7f1dd6f
+      internalID: 49103742089233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_69
+      rect:
+        serializedVersion: 2
+        x: 2290
+        y: 264
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74e353a32be7f2aaf4d97fc0c2c1b153
+      internalID: 29271017394521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_70
+      rect:
+        serializedVersion: 2
+        x: 2748
+        y: 264
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c77c808bf030725814a55f55458d9a2
+      internalID: 70592622424793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_71
+      rect:
+        serializedVersion: 2
+        x: 3206
+        y: 264
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97b5174ffaac1636019a698100ac8765
+      internalID: 87437676164617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_72
+      rect:
+        serializedVersion: 2
+        x: 3664
+        y: 264
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d101733be28fbf91393851f9e1e7ea2
+      internalID: 63544859891205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_73
+      rect:
+        serializedVersion: 2
+        x: 4122
+        y: 264
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b797d080ea809cea5ec39ad79435f3db
+      internalID: 42478361149277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_74
+      rect:
+        serializedVersion: 2
+        x: 4580
+        y: 264
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b0a4a65073f7a4c76ce08ae61dfdc01
+      internalID: 21678664278205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_75
+      rect:
+        serializedVersion: 2
+        x: 5038
+        y: 264
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2bd1acc5434d1a9fafaf1e5927fa503
+      internalID: 31290909735664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_76
+      rect:
+        serializedVersion: 2
+        x: 5496
+        y: 264
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bee83ed8fa74474ad4f649e85d8bc8c
+      internalID: 11697514252778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_77
+      rect:
+        serializedVersion: 2
+        x: 5954
+        y: 264
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73a632549309d595eb5c8ab08c777074
+      internalID: 35664959859807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_78
+      rect:
+        serializedVersion: 2
+        x: 6412
+        y: 264
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b26e8b4ed961e5ed1b52ac6424efaade
+      internalID: 49678036368581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_79
+      rect:
+        serializedVersion: 2
+        x: 6870
+        y: 264
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2efa8fde4ba5d6cfb3d7dd1c46159cd1
+      internalID: 30499896485721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de237e0f4fc7fa8508b35a2d9a99e127
+      internalID: 85236741485551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_81
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 0
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 166e348df8cb86fea0551e7913206859
+      internalID: 95823622440685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_82
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 0
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dcabae9e134c5486b08f8d3ec156be8
+      internalID: 54841890987281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_83
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 0
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cfe37bf59444f72c5e3960fb251f81b
+      internalID: 27664999045568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_84
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 0
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c667beb53b497a114581f4da02bd81bb
+      internalID: 74265827547749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_85
+      rect:
+        serializedVersion: 2
+        x: 2290
+        y: 0
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3aeb49df4338db09ee43c66664c4f7d
+      internalID: 88712997505443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_86
+      rect:
+        serializedVersion: 2
+        x: 2748
+        y: 0
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b00826c538b9156d88ec093b8b954ccd
+      internalID: 66020943696291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_87
+      rect:
+        serializedVersion: 2
+        x: 3206
+        y: 0
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 633debe506a0f5628be7269f85478113
+      internalID: 65466921261572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_88
+      rect:
+        serializedVersion: 2
+        x: 3664
+        y: 0
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 568388243f5b0eec0d4a99a44661a99c
+      internalID: 77766438684716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_89
+      rect:
+        serializedVersion: 2
+        x: 4122
+        y: 0
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56bbe0c3b4f4fa88de2a8fa51daf673c
+      internalID: 66356990143755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_90
+      rect:
+        serializedVersion: 2
+        x: 4580
+        y: 0
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41a4f809b6f703ee737a963f33bf72e0
+      internalID: 36822338115880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_91
+      rect:
+        serializedVersion: 2
+        x: 5038
+        y: 0
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff0732c86bfd159137023050af15e6d2
+      internalID: 72011634450698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_92
+      rect:
+        serializedVersion: 2
+        x: 5496
+        y: 0
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c5509bccd4050b9a8f55f652da22b5a
+      internalID: 25471169287077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_93
+      rect:
+        serializedVersion: 2
+        x: 5954
+        y: 0
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26031169aee3f5f35200915ea0ae2fa2
+      internalID: 94543596773781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_94
+      rect:
+        serializedVersion: 2
+        x: 6412
+        y: 0
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f6849e02a820ad9548a6f839dd1759d
+      internalID: 24405546121309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neblina_gif_95
+      rect:
+        serializedVersion: 2
+        x: 6870
+        y: 0
+        width: 458
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd39b5e12bab07a5c71b817a92838273
+      internalID: 89766133623240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1b02fa9d614741ca835dcc6251139c6b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      neblina_gif_0: 65564639800631
+      neblina_gif_1: 16797434004560
+      neblina_gif_10: 89580705363119
+      neblina_gif_11: 98752163008601
+      neblina_gif_12: 92049455060661
+      neblina_gif_13: 18709969087913
+      neblina_gif_14: 92410016146639
+      neblina_gif_15: 16976730618388
+      neblina_gif_16: 41116936075980
+      neblina_gif_17: 88340403550128
+      neblina_gif_18: 28742629406411
+      neblina_gif_19: 68988324705686
+      neblina_gif_2: 23247980736555
+      neblina_gif_20: 86094555154084
+      neblina_gif_21: 90346459120064
+      neblina_gif_22: 88848334539320
+      neblina_gif_23: 24500585805195
+      neblina_gif_24: 90391400832913
+      neblina_gif_25: 36442562786631
+      neblina_gif_26: 23711135044099
+      neblina_gif_27: 89427099881527
+      neblina_gif_28: 97115077649844
+      neblina_gif_29: 79862822622687
+      neblina_gif_3: 92018266106360
+      neblina_gif_30: 84834137493844
+      neblina_gif_31: 75525370319599
+      neblina_gif_32: 60888718935088
+      neblina_gif_33: 44962321278893
+      neblina_gif_34: 35300769207335
+      neblina_gif_35: 21520150674427
+      neblina_gif_36: 52256355389103
+      neblina_gif_37: 79679510144801
+      neblina_gif_38: 58343615603399
+      neblina_gif_39: 73169216965920
+      neblina_gif_4: 40217274347253
+      neblina_gif_40: 95703014107656
+      neblina_gif_41: 20303541394744
+      neblina_gif_42: 82048583479056
+      neblina_gif_43: 33216094058728
+      neblina_gif_44: 58141245349119
+      neblina_gif_45: 69349958176642
+      neblina_gif_46: 20924971798992
+      neblina_gif_47: 88545350748830
+      neblina_gif_48: 57868758049228
+      neblina_gif_49: 59283441025167
+      neblina_gif_5: 22094788948184
+      neblina_gif_50: 79903145541581
+      neblina_gif_51: 19678520704874
+      neblina_gif_52: 23171977363710
+      neblina_gif_53: 47993043107542
+      neblina_gif_54: 19146837885210
+      neblina_gif_55: 53575456103222
+      neblina_gif_56: 91340870048897
+      neblina_gif_57: 72718642596261
+      neblina_gif_58: 58836649997086
+      neblina_gif_59: 60025467062674
+      neblina_gif_6: 68851504383834
+      neblina_gif_60: 95977377093606
+      neblina_gif_61: 79480188870008
+      neblina_gif_62: 40709269373696
+      neblina_gif_63: 50453301529281
+      neblina_gif_64: 65998847102851
+      neblina_gif_65: 79878565667504
+      neblina_gif_66: 33412212824551
+      neblina_gif_67: 66527993827842
+      neblina_gif_68: 49103742089233
+      neblina_gif_69: 29271017394521
+      neblina_gif_7: 43870412123023
+      neblina_gif_70: 70592622424793
+      neblina_gif_71: 87437676164617
+      neblina_gif_72: 63544859891205
+      neblina_gif_73: 42478361149277
+      neblina_gif_74: 21678664278205
+      neblina_gif_75: 31290909735664
+      neblina_gif_76: 11697514252778
+      neblina_gif_77: 35664959859807
+      neblina_gif_78: 49678036368581
+      neblina_gif_79: 30499896485721
+      neblina_gif_8: 87550319106009
+      neblina_gif_80: 85236741485551
+      neblina_gif_81: 95823622440685
+      neblina_gif_82: 54841890987281
+      neblina_gif_83: 27664999045568
+      neblina_gif_84: 74265827547749
+      neblina_gif_85: 88712997505443
+      neblina_gif_86: 66020943696291
+      neblina_gif_87: 65466921261572
+      neblina_gif_88: 77766438684716
+      neblina_gif_89: 66356990143755
+      neblina_gif_9: 18316879981094
+      neblina_gif_90: 36822338115880
+      neblina_gif_91: 72011634450698
+      neblina_gif_92: 25471169287077
+      neblina_gif_93: 94543596773781
+      neblina_gif_94: 24405546121309
+      neblina_gif_95: 89766133623240
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

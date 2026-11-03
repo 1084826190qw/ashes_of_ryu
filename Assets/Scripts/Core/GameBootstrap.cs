@@ -5,6 +5,10 @@ namespace AshesOfRyu
 {
     public class GameBootstrap : MonoBehaviour
     {
+        [SerializeField] private Sprite[] groundTiles;
+        [SerializeField] private AudioClip gameplayMusic;
+        [SerializeField, Range(0f, 1f)] private float gameplayMusicVolume = 0.45f;
+
         private void Awake()
         {
             if (GameManager.Instance != null)
@@ -15,6 +19,7 @@ namespace AshesOfRyu
 
             EnsureGlobalLight();
             SetupCamera();
+            StartGameplayMusic();
 
             var meta = new MetaProgression();
             var gameManager = new GameObject("GameManager").AddComponent<GameManager>();
@@ -23,9 +28,11 @@ namespace AshesOfRyu
             var input = new GameObject("InputReader").AddComponent<InputReader>();
 
             var baked = GameObject.Find("Mundo");
-            if (baked != null) Destroy(baked);
-
-            ArenaBuilder.Build(transform, out float halfW, out float halfH, out Vector2 spawn);
+            float halfW = 16f;
+            float halfH = 9f;
+            Vector2 spawn = new Vector2(-14.5f, 6.5f);
+            if (baked == null)
+                ArenaBuilder.Build(transform, groundTiles, out halfW, out halfH, out spawn);
 
             var player = BuildPlayer(spawn);
             FairyCompanion.Create(transform, player.transform);
@@ -48,9 +55,25 @@ namespace AshesOfRyu
             hud.Bind(gameManager, player.GetComponent<PlayerHealth>(), player.GetComponent<PlayerAbilities>());
 
             var cameraFollow = Camera.main.gameObject.AddComponent<CameraFollow>();
-            cameraFollow.Target = player.transform;
+            cameraFollow.SetTarget(player.transform);
 
             spawner.ResetForRun(0);
+        }
+
+        private void StartGameplayMusic()
+        {
+            if (gameplayMusic == null)
+            {
+                Debug.LogError("[GameBootstrap] No hay música de juego asignada.", this);
+                return;
+            }
+
+            var source = gameObject.AddComponent<AudioSource>();
+            source.clip = gameplayMusic;
+            source.loop = true;
+            source.volume = gameplayMusicVolume;
+            source.playOnAwake = false;
+            source.Play();
         }
 
         private static GameObject BuildPlayer(Vector2 spawn)
@@ -68,7 +91,7 @@ namespace AshesOfRyu
             rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
 
             var col = go.AddComponent<CircleCollider2D>();
-            col.radius = 0.8f;
+            col.radius = 0.3f;
 
             go.AddComponent<PlayerController>();
             go.AddComponent<PlayerVisuals>();
@@ -107,7 +130,8 @@ namespace AshesOfRyu
             cam.orthographic = true;
             cam.orthographicSize = 3.2f;
             cam.transform.position = new Vector3(0f, 0f, -10f);
-            cam.backgroundColor = new Color(0.02f, 0.02f, 0.03f);
+            cam.clearFlags = CameraClearFlags.SolidColor;
+            cam.backgroundColor = Color.black;
         }
 
         private static void EnsureGlobalLight()

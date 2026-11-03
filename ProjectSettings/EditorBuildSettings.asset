@@ -12,8 +12,29 @@ EditorBuildSettings:
     path: Assets/Scenes/2_scene_menu.unity
     guid: 81bf1a1d73ba37cbaa2488206f099d20
   - enabled: 1
-    path: Assets/Scenes/3_scene_cinematic.unity
-    guid: 569bd85d386480fa396f71c00f711371
+    path: Assets/Scenes/3_scene_cinematic_1.unity
+    guid: 7a2728c0be86b6603b9982f0dd43a060
+  - enabled: 1
+    path: Assets/Scenes/3_scene_cinematic_2.unity
+    guid: 0fa0c356ae441bd24afeb529bc08cd47
+  - enabled: 1
+    path: Assets/Scenes/3_scene_cinematic_3.unity
+    guid: ae8b576b59b8bf3d5b373c48600aef8c
+  - enabled: 1
+    path: Assets/Scenes/3_scene_cinematic_4.unity
+    guid: b1cd1e7c62fe52c129b8617dce8363fe
+  - enabled: 1
+    path: Assets/Scenes/3_scene_cinematic_5.unity
+    guid: da5a45aeff099eb8090634853c98850c
+  - enabled: 1
+    path: Assets/Scenes/3_scene_cinematic_6.unity
+    guid: bc1259705f89d7f1ab3ed7eef6364c00
+  - enabled: 1
+    path: Assets/Scenes/3_scene_cinematic_7.unity
+    guid: 6be3364c0a4dbbbb5b521a28d087f37f
+  - enabled: 1
+    path: Assets/Scenes/3_scene_cinematic_8.unity
+    guid: bd31993df4c9e5ae0b731178cca396e9
   - enabled: 1
     path: Assets/Scenes/4_scene_game.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02

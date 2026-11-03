@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1bf1f73e99318b95aa4a4969e49799ea
+guid: 3ff17858503fff305b57c0ed0d4e750a
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -137,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbcbd5a427f9cc3f4afab9db35b6c105
-      internalID: -458632420
+      spriteID: b8c778dc7401402a1befb42efe066db9
+      internalID: 212591786
       vertices: []
       indices: 
       edges: []
@@ -147,10 +147,10 @@ TextureImporter:
       name: death-forest-tiles_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
+        x: 128
+        y: 4
+        width: 128
+        height: 124
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,8 +159,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bd8307f42ba3a06b9ec5200fbb70d3b
-      internalID: -939238559
+      spriteID: 4e88b2e03ae000dd385922da32fd20b3
+      internalID: -1674737653
       vertices: []
       indices: 
       edges: []
@@ -169,10 +169,10 @@ TextureImporter:
       name: death-forest-tiles_3
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 128
-        height: 128
+        x: 0
+        y: 14
+        width: 64
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,8 +181,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93645585c9c32d52bab79ab0264f49b3
-      internalID: 1347586900
+      spriteID: f0c1c396d927494b18367ad01de51702
+      internalID: 445410378
       vertices: []
       indices: 
       edges: []
@@ -191,7 +191,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e568c47bf42c621e5a3398c3f2f5cb6f
+    spriteID: 7b81ce1bd6828d683a15fa4b9f6f77f6
     internalID: 0
     vertices: []
     indices: 
@@ -202,9 +202,9 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       death-forest-tiles_0: 7174081738093524220
-      death-forest-tiles_1: -458632420
-      death-forest-tiles_2: -939238559
-      death-forest-tiles_3: 1347586900
+      death-forest-tiles_1: 212591786
+      death-forest-tiles_2: -1674737653
+      death-forest-tiles_3: 445410378
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

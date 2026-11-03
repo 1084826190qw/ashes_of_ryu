@@ -19,7 +19,7 @@ namespace AshesOfRyu.EditorTools
         {
             if (EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo())
             {
-                EditorSceneManager.OpenScene("Assets/Scenes/3_scene_cinematic.unity");
+                EditorSceneManager.OpenScene("Assets/Scenes/3_scene_cinematic_1.unity");
             }
         }
 

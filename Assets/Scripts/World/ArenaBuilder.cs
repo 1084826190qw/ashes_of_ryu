@@ -5,106 +5,135 @@ namespace AshesOfRyu
     public static class ArenaBuilder
     {
         private const float TileSize = 1f;
-        private const float DirtChance = 0.12f;
-        private const float BushChance = 0.035f;
-        private const float SkullChance = 0.006f;
+        private const int PathStartX = -15;
+        private const int PathEndX = 0;
+        private const float WorldHalfWidth = 16f;
+        private const float WorldHalfHeight = 9f;
+        private static readonly Vector2 PlayerSpawn = new Vector2(-14.5f, 6.5f);
 
-        public static void Build(Transform parent, out float halfW, out float halfH, out Vector2 spawnPoint)
+        public static void Build(Transform parent, Sprite[] groundTiles, out float halfW, out float halfH, out Vector2 spawnPoint)
         {
-            halfW = 16f;
-            halfH = 9f;
-            spawnPoint = new Vector2(-halfW * 0.6f, 0f);
+            halfW = WorldHalfWidth;
+            halfH = WorldHalfHeight;
+            spawnPoint = PlayerSpawn;
 
-            EnvironmentArt.Load();
+            EnvironmentArt.Load(groundTiles);
             var rng = new System.Random(20260820);
 
-            BuildFloor(parent, halfW, halfH, rng);
+            BuildFloor(parent, halfW, halfH);
 
+            var collisionLayer = CreateLayer(parent, "Colisiones");
             float thickness = 1f;
-            AddWall(parent, "MuroNorte", new Vector2(0f, halfH + thickness * 0.5f), new Vector2(halfW * 2f + thickness * 2f, thickness));
-            AddWall(parent, "MuroSur", new Vector2(0f, -halfH - thickness * 0.5f), new Vector2(halfW * 2f + thickness * 2f, thickness));
-            AddWall(parent, "MuroOeste", new Vector2(-halfW - thickness * 0.5f, 0f), new Vector2(thickness, halfH * 2f + thickness * 2f));
-            AddWall(parent, "MuroEste", new Vector2(halfW + thickness * 0.5f, 0f), new Vector2(thickness, halfH * 2f + thickness * 2f));
+            AddWall(collisionLayer, "MuroNorte", new Vector2(0f, halfH + thickness * 0.5f), new Vector2(halfW * 2f + thickness * 2f, thickness));
+            AddWall(collisionLayer, "MuroSur", new Vector2(0f, -halfH - thickness * 0.5f), new Vector2(halfW * 2f + thickness * 2f, thickness));
+            AddWall(collisionLayer, "MuroOesteSuperior", new Vector2(-halfW - thickness * 0.5f, 8.5f), new Vector2(thickness, 2f));
+            AddWall(collisionLayer, "MuroOesteInferior", new Vector2(-halfW - thickness * 0.5f, -1.5f), new Vector2(thickness, 15f));
+            AddWall(collisionLayer, "MuroEste", new Vector2(halfW + thickness * 0.5f, 0f), new Vector2(thickness, halfH * 2f + thickness * 2f));
 
-            AddRock(parent, new Vector2(-4f, 2.5f), rng);
-            AddRock(parent, new Vector2(3f, -3f), rng);
-            AddRock(parent, new Vector2(6f, 2f), rng);
-            AddRock(parent, new Vector2(-7f, -2f), rng);
-            AddRock(parent, new Vector2(0.5f, 4.5f), rng);
-            AddRock(parent, new Vector2(-2f, -5f), rng);
-            AddRock(parent, new Vector2(9f, -4f), rng);
+            var decorationLayer = CreateLayer(parent, "Decoracion");
+            AddRock(decorationLayer, new Vector2(-11f, 2f), rng);
+            AddRock(decorationLayer, new Vector2(-8f, -2f), rng);
+            AddRock(decorationLayer, new Vector2(-5f, 5f), rng);
+            AddRock(decorationLayer, new Vector2(-3f, -5f), rng);
+            AddRock(decorationLayer, new Vector2(-1f, 4f), rng);
 
-            AddTreeObstacle(parent, new Vector2(-11f, 5.5f));
-            AddTreeObstacle(parent, new Vector2(12f, -6f));
-
-            AddBorderTrees(parent, halfW, halfH, rng);
+            AddTreeObstacle(decorationLayer, new Vector2(-12f, 0f));
+            AddTreeObstacle(decorationLayer, new Vector2(-4f, -7f));
+            AddBorderTrees(decorationLayer, halfW, halfH, rng);
 
             FogAnimator.CreateLayer(parent, halfW * 2f + 2f, 0.5f, 5f);
         }
 
-        private static void BuildFloor(Transform parent, float halfW, float halfH, System.Random rng)
+        private static void BuildFloor(Transform parent, float halfW, float halfH)
         {
             var floor = new GameObject("Suelo");
             floor.transform.SetParent(parent, false);
             floor.transform.position = new Vector3(0f, 0f, 1f);
+            var grassLayer = CreateLayer(floor.transform, "Hierba");
+            var pathLayer = CreateLayer(floor.transform, "Camino");
 
-            // Los tiles de suelo miden 1 x 0.5 unidades (64x32 px @ PPU 64):
-            // paso horizontal de 1 y vertical de 0.5 para cubrir sin huecos.
             int minX = Mathf.FloorToInt(-halfW - 1f);
             int maxX = Mathf.CeilToInt(halfW + 1f);
-            int minY = Mathf.FloorToInt((-halfH - 1f) * 2f);
-            int maxY = Mathf.CeilToInt((halfH + 1f) * 2f);
+            int minY = Mathf.FloorToInt(-halfH - 1f);
+            int maxY = Mathf.CeilToInt(halfH + 1f);
 
             for (int row = minY; row < maxY; row++)
             {
-                float yPos = row * 0.5f + 0.25f;
+                float yPos = row + TileSize * 0.5f;
                 for (int x = minX; x < maxX; x++)
                 {
-                    var tileGo = new GameObject($"Tile_{x}_{row}");
-                    tileGo.transform.SetParent(floor.transform, false);
-                    tileGo.transform.position = new Vector3(x + 0.5f, yPos, 0f);
+                    bool isPath = IsPathCell(x, row);
+                    float rotation = 0f;
+                    var tileGo = new GameObject($"{(isPath ? "Camino" : "Hierba")}_{x}_{row}");
+                    tileGo.transform.SetParent(isPath ? pathLayer : grassLayer, false);
+                    tileGo.transform.localPosition = new Vector3(x + TileSize * 0.5f, yPos, 0f);
                     var sr = tileGo.AddComponent<SpriteRenderer>();
-                    var isDirt = rng.NextDouble() < DirtChance;
-                    sr.sprite = isDirt ? DirtTiles(rng) : FloorTiles(rng);
-                    if (isDirt && sr.sprite != null)
-                        sr.color = new Color(1.3f, 1.1f, 0.9f); // aclarar tierra
-                    sr.sortingOrder = -10;
+                    sr.sprite = isPath ? SelectPathTile(x, row, out rotation) : EnvironmentArt.GrassTile;
+                    if (isPath)
+                        tileGo.transform.localRotation = Quaternion.Euler(0f, 0f, rotation);
 
-                    double roll = rng.NextDouble();
-                    if (roll < SkullChance)
-                    {
-                        AddDecal(floor.transform, EnvironmentArt.Skull, new Vector3(x + 0.5f, yPos, 0f), 0.45f);
-                    }
-                    else if (roll < SkullChance + BushChance)
-                    {
-                        AddDecal(floor.transform, EnvironmentArt.Bush, new Vector3(x + 0.5f, yPos, 0f), 0.35f);
-                    }
+                    Vector2 spriteSize = sr.sprite.bounds.size;
+                    tileGo.transform.localScale = new Vector3(
+                        TileSize / spriteSize.x,
+                        TileSize / spriteSize.y,
+                        1f);
+                    sr.sortingOrder = -10;
                 }
             }
         }
 
-        private static Sprite FloorTiles(System.Random rng)
+        private static bool IsPathCell(int x, int y)
         {
-            var tiles = EnvironmentArt.FloorTiles;
-            return tiles == null || tiles.Length == 0 ? null : tiles[rng.Next(tiles.Length)];
+            if (x < PathStartX || x > PathEndX)
+                return false;
+
+            float progress = (float)(x - PathStartX) / (PathEndX - PathStartX);
+            int centerY = Mathf.RoundToInt(Mathf.Lerp(7f, 0f, progress) + Mathf.Sin(progress * Mathf.PI) * 0.75f);
+            int halfWidth = x >= PathEndX - 2 ? 3 : 1;
+            return Mathf.Abs(y - centerY) <= halfWidth;
         }
 
-        private static Sprite DirtTiles(System.Random rng)
+        private static Sprite SelectPathTile(int x, int y, out float rotation)
         {
-            var tiles = EnvironmentArt.DirtTiles;
-            return tiles == null || tiles.Length == 0 ? null : tiles[rng.Next(tiles.Length)];
+            bool grassAbove = !IsPathCell(x, y + 1);
+            bool grassBelow = !IsPathCell(x, y - 1);
+            bool grassRight = !IsPathCell(x + 1, y);
+            bool grassLeft = !IsPathCell(x - 1, y);
+
+            rotation = 0f;
+            if (grassAbove && grassLeft)
+                return EnvironmentArt.GrassTopLeftCorner;
+            if (grassAbove && grassRight)
+            {
+                rotation = 270f;
+                return EnvironmentArt.GrassTopLeftCorner;
+            }
+            if (grassBelow && grassRight)
+            {
+                rotation = 180f;
+                return EnvironmentArt.GrassTopLeftCorner;
+            }
+            if (grassBelow && grassLeft)
+            {
+                rotation = 90f;
+                return EnvironmentArt.GrassTopLeftCorner;
+            }
+            if (grassAbove)
+                return EnvironmentArt.GrassTopEdge;
+            if (grassBelow)
+                return EnvironmentArt.GrassBottomEdge;
+            if (grassLeft)
+                return EnvironmentArt.GrassLeftEdge;
+            if (grassRight)
+                return EnvironmentArt.GrassRightEdge;
+            return EnvironmentArt.PathTile;
         }
 
-        private static void AddDecal(Transform parent, Sprite sprite, Vector3 pos, float scale)
+        private static Transform CreateLayer(Transform parent, string name)
         {
-            if (sprite == null) return;
-            var go = new GameObject("Decal");
-            go.transform.SetParent(parent, false);
-            go.transform.position = pos;
-            go.transform.localScale = new Vector3(scale, scale, 1f);
-            var sr = go.AddComponent<SpriteRenderer>();
-            sr.sprite = sprite;
-            sr.sortingOrder = -9;
+            var layer = new GameObject(name);
+            layer.transform.SetParent(parent, false);
+            return layer.transform;
         }
 
         private static void AddWall(Transform parent, string name, Vector2 pos, Vector2 size)
@@ -121,8 +150,8 @@ namespace AshesOfRyu
 
         private static readonly Vector2[] RockColliderSizes =
         {
-            new Vector2(0.95f, 0.8f),
-            new Vector2(0.75f, 0.55f),
+            new Vector2(0.55f, 0.4f),
+            new Vector2(0.55f, 0.4f),
         };
 
         private static void AddRock(Transform parent, Vector2 pos, System.Random rng)
