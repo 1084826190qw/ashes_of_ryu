@@ -5,24 +5,39 @@ namespace AshesOfRyu
 {
     public class EnemySpawner : MonoBehaviour
     {
-        private Transform container;
-        private Vector2 center;
-        private float halfW;
-        private float halfH;
-        private float spawnTimer;
-        private int runIndex;
+        // Ocho esqueletos fijos repartidos por todo el mapa.
+        // Se quedan quietos, pero siguen animados y algunos lanzan proyectiles.
+        private static readonly Vector2[] StaticSpawnPoints =
+        {
+            new Vector2(-11.5f, 9.0f),
+            new Vector2(-1.0f, -9.0f),
+            new Vector2(7.0f, 7.0f),
+            new Vector2(10.5f, -4.0f),
+            new Vector2(17.0f, 3.5f),
+            new Vector2(28.0f, -10.5f),
+            new Vector2(37.5f, 4.0f),
+            new Vector2(55.0f, -5.0f),
+        };
 
-        // Tiempo de exploracion sin enemigos: la hada acompana a Ryu al inicio.
-        private const float FirstRunExploreTime = 35f;
-        private const float RespawnExploreTime = 8f;
+        // Algunos esqueletos son los que lanzan huesos.
+        private static readonly bool[] RangedSlots =
+        {
+            false,
+            false,
+            true,
+            false,
+            true,
+            false,
+            true,
+            false,
+        };
+
+        private Transform container;
 
         private readonly List<Enemy> alive = new List<Enemy>();
 
         public void Configure(Transform parent, Vector2 center, float halfW, float halfH)
         {
-            this.center = center;
-            this.halfW = halfW;
-            this.halfH = halfH;
             container = new GameObject("Enemigos").transform;
             container.SetParent(parent, false);
         }
@@ -30,8 +45,7 @@ namespace AshesOfRyu
         public void ResetForRun(int deaths)
         {
             ClearAll();
-            runIndex = deaths;
-            spawnTimer = deaths <= 0 ? FirstRunExploreTime : RespawnExploreTime;
+            SpawnStaticSkeletons();
         }
 
         public void ClearAll()
@@ -43,39 +57,22 @@ namespace AshesOfRyu
             alive.Clear();
         }
 
-        private void Update()
+        private void SpawnStaticSkeletons()
         {
-            if (GameManager.Instance == null || GameManager.Instance.PlayerIsDead) return;
+            float difficulty = GameManager.Instance != null ? GameManager.Instance.DifficultyScale : 1f;
 
-            spawnTimer -= Time.deltaTime;
-            if (spawnTimer > 0f) return;
-
-            int maxAlive = 5 + Mathf.Min(runIndex, 10);
-            spawnTimer = Mathf.Max(1.2f, 3.5f - runIndex * 0.2f);
-            if (alive.Count < maxAlive) SpawnRandom();
-        }
-
-        private void SpawnRandom()
-        {
-            var player = GameManager.Instance.Player;
-            Vector2 pos;
-            int attempts = 0;
-            do
+            for (int i = 0; i < StaticSpawnPoints.Length; i++)
             {
-                pos = new Vector2(
-                    center.x + Random.Range(-halfW, halfW),
-                    center.y + Random.Range(-halfH, halfH));
-                attempts++;
+                Vector2 pos = StaticSpawnPoints[i];
+                Enemy enemy = RangedSlots[i]
+                    ? RangedEnemy.Create(pos, container)
+                    : ChaserEnemy.Create(pos, container);
+
+                enemy.SetMoveSpeed(0f);
+                enemy.Configure(difficulty);
+                enemy.Died += OnEnemyDied;
+                alive.Add(enemy);
             }
-            while (player != null && Vector2.Distance(pos, player.Position) < 3f && attempts < 20);
-
-            Enemy enemy = Random.value < 0.3f
-                ? RangedEnemy.Create(pos, container)
-                : ChaserEnemy.Create(pos, container);
-
-            enemy.Configure(GameManager.Instance.DifficultyScale);
-            enemy.Died += OnEnemyDied;
-            alive.Add(enemy);
         }
 
         private void OnEnemyDied(Enemy enemy)

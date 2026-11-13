@@ -5,6 +5,7 @@ namespace AshesOfRyu
     public class ChaserEnemy : Enemy
     {
         protected override float BaseHealth() => 30f;
+        protected override bool ShowsDamageText => false;
 
         protected override Vector2 GetMoveDirection()
         {
@@ -20,6 +21,7 @@ namespace AshesOfRyu
             enemy.moveSpeed = 1.75f;
             enemy.ContactDamage = 12f;
             enemy.MemoryDropChance = 35;
+            SkeletonEnemyVisuals.Attach(enemy.gameObject);
             return enemy;
         }
     }

@@ -139,7 +139,17 @@ namespace AshesOfRyu
             }
             else
             {
-                sr.sprite = SpriteFactory.Circle(color, 16);
+                var boneFrames = SkeletonSpriteLoader.GetFrames("Spinning_Bone", 16, 16);
+                if (boneFrames != null && boneFrames.Length > 0)
+                {
+                    sr.sprite = boneFrames[0];
+                    var animator = go.AddComponent<FireballAnimator>();
+                    animator.Init(boneFrames, 0.1f);
+                }
+                else
+                {
+                    sr.sprite = SpriteFactory.Circle(color, 16);
+                }
             }
 
             var rb = go.AddComponent<Rigidbody2D>();

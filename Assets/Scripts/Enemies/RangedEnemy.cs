@@ -11,6 +11,7 @@ namespace AshesOfRyu
         private float fireTimer;
 
         protected override float BaseHealth() => 18f;
+        protected override bool ShowsDamageText => false;
 
         protected override Vector2 GetMoveDirection()
         {
@@ -36,6 +37,9 @@ namespace AshesOfRyu
                 Vector2 dir = (player.Position - rb.position).normalized;
                 Projectile.Create(rb.position + dir * 0.4f, dir, ProjectileSpeed, ContactDamage * 0.8f, 8f,
                     0, 0, new Color(0.65f, 0.25f, 0.9f), false, 0.5f);
+
+                var visuals = GetComponent<SkeletonEnemyVisuals>();
+                if (visuals != null) visuals.PlayAttack();
             }
         }
 
@@ -45,6 +49,7 @@ namespace AshesOfRyu
             enemy.moveSpeed = 1.35f;
             enemy.ContactDamage = 8f;
             enemy.MemoryDropChance = 30;
+            SkeletonEnemyVisuals.Attach(enemy.gameObject);
             return enemy;
         }
     }

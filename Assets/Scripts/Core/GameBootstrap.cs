@@ -7,7 +7,14 @@ namespace AshesOfRyu
     {
         [SerializeField] private Sprite[] groundTiles;
         [SerializeField] private AudioClip gameplayMusic;
-        [SerializeField, Range(0f, 1f)] private float gameplayMusicVolume = 0.45f;
+        [SerializeField] private AudioClip bossMusic;
+        [SerializeField, Range(0f, 1f)] private float gameplayMusicVolume = 0.3f;
+        [SerializeField, Range(0f, 1f)] private float bossMusicVolume = 0.25f;
+        [SerializeField] private float bossEngageRadius = 11f;
+
+        private AudioSource musicSource;
+        private BossPrimerNivel boss;
+        private float bossSearchTimer;
 
         private void Awake()
         {
@@ -62,18 +69,66 @@ namespace AshesOfRyu
 
         private void StartGameplayMusic()
         {
+            musicSource = gameObject.AddComponent<AudioSource>();
+            musicSource.loop = true;
+            musicSource.playOnAwake = false;
+            musicSource.spatialBlend = 0f;
+
             if (gameplayMusic == null)
             {
                 Debug.LogError("[GameBootstrap] No hay música de juego asignada.", this);
                 return;
             }
 
-            var source = gameObject.AddComponent<AudioSource>();
-            source.clip = gameplayMusic;
-            source.loop = true;
-            source.volume = gameplayMusicVolume;
-            source.playOnAwake = false;
-            source.Play();
+            musicSource.clip = gameplayMusic;
+            musicSource.volume = gameplayMusicVolume;
+            musicSource.Play();
+        }
+
+        private void Update()
+        {
+            UpdateMusic();
+        }
+
+        private void UpdateMusic()
+        {
+            if (musicSource == null) return;
+
+            if (boss == null)
+            {
+                bossSearchTimer -= Time.unscaledDeltaTime;
+                if (bossSearchTimer <= 0f)
+                {
+                    bossSearchTimer = 0.5f;
+                    boss = FindAnyObjectByType<BossPrimerNivel>();
+                }
+            }
+
+            bool fightingBoss = false;
+            var gameManager = GameManager.Instance;
+            if (boss != null && gameManager != null && gameManager.Player != null && !gameManager.PlayerIsDead)
+            {
+                float distance = Vector2.Distance(gameManager.Player.Position, boss.transform.position);
+                fightingBoss = distance <= bossEngageRadius;
+            }
+
+            bool useBossMusic = fightingBoss && bossMusic != null;
+            AudioClip desiredClip = useBossMusic ? bossMusic : gameplayMusic;
+            float desiredVolume = useBossMusic ? bossMusicVolume : gameplayMusicVolume;
+
+            if (desiredClip == null) return;
+
+            if (musicSource.clip != desiredClip)
+            {
+                musicSource.Stop();
+                musicSource.clip = desiredClip;
+                musicSource.volume = desiredVolume;
+                musicSource.Play();
+            }
+            else if (!Mathf.Approximately(musicSource.volume, desiredVolume))
+            {
+                musicSource.volume = desiredVolume;
+            }
         }
 
         private static GameObject BuildPlayer(Vector2 spawn)

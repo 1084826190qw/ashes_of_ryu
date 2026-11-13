@@ -20,14 +20,15 @@ namespace AshesOfRyu
         public float DifficultyScale => 1f + Meta.Deaths * 0.15f;
         public string CurrentAreaName => "Bosque Oscuro";
 
+        // Voces del caballero que guarda el castillo.
         private readonly string[] memoryLines =
         {
-            "El mago temía el poder de los dragones... y por ello los exterminó.",
-            "Cada muerte convierte tu cuerpo en cenizas y te arrebata un recuerdo.",
-            "La maldición fue lanzada para que jamás pudieras descansar.",
-            "Aunque lo olvides... el castillo del mago espera al final del camino.",
-            "Tus garras recuerdan el fuego de tus ancestros.",
-            "Si algún día pudieras morir... ¿de verdad querrías hacerlo?",
+            "Soy el guardián del castillo. Ningún dragón cruzará estas puertas.",
+            "El mago me entregó este acero... y yo le entregué mi juramento.",
+            "He visto caer a cien dragones. Tú no serás el último.",
+            "La llave que buscas no abre una puerta: abre tu tumba.",
+            "El castillo recuerda cada juramento roto... el tuyo ya está escrito.",
+            "Si buscas al mago, tendrás que pasar sobre mi armadura.",
         };
 
         private InputReader input;

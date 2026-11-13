@@ -1,0 +1,337 @@
+fileFormatVersion: 2
+guid: 986cdbe46eecfb516a5649eb0c72b6a9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7096628384563705272
+    second: fogata_0
+  - first:
+      213: 3748657124823810633
+    second: fogata_1
+  - first:
+      213: -439847511589994268
+    second: fogata_2
+  - first:
+      213: -6269673613530879418
+    second: fogata_3
+  - first:
+      213: -1546432195013514474
+    second: fogata_4
+  - first:
+      213: 1153667714200978704
+    second: fogata_5
+  - first:
+      213: 1660312746175797835
+    second: fogata_6
+  - first:
+      213: 4450862376338927464
+    second: fogata_7
+  - first:
+      213: 9044400333706050920
+    second: fogata_8
+  - first:
+      213: -1546944188226308053
+    second: fogata_9
+  - first:
+      213: -9204414266249506241
+    second: fogata_10
+  - first:
+      213: -4126358449401490018
+    second: fogata_11
+  - first:
+      213: 1254405916425191552
+    second: fogata_12
+  - first:
+      213: 1318389881422995320
+    second: fogata_13
+  - first:
+      213: 8631437567744754280
+    second: fogata_14
+  - first:
+      213: -5769898619154907607
+    second: fogata_15
+  - first:
+      213: -6777551553702150096
+    second: fogata_16
+  - first:
+      213: 2086583701964777770
+    second: fogata_17
+  - first:
+      213: -2819293270489039215
+    second: fogata_18
+  - first:
+      213: 5905127740511360800
+    second: fogata_19
+  - first:
+      213: -2471505315673192395
+    second: fogata_20
+  - first:
+      213: -8149795776615999545
+    second: fogata_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fogata_6
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 508
+        width: 382
+        height: 649
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4a9cdb55ad9a0710800000000000000
+      internalID: 1660312746175797835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogata_11
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 508
+        width: 382
+        height: 628
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e951e774ada3cb6c0800000000000000
+      internalID: -4126358449401490018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogata_17
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 508
+        width: 382
+        height: 530
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a29eabd52d805fc10800000000000000
+      internalID: 2086583701964777770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogata_19
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 508
+        width: 382
+        height: 549
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0271c7ea46a33f150800000000000000
+      internalID: 5905127740511360800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogata_20
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 508
+        width: 382
+        height: 584
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5384fce820373bdd0800000000000000
+      internalID: -2471505315673192395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogata_21
+      rect:
+        serializedVersion: 2
+        x: 2269
+        y: 508
+        width: 381
+        height: 558
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c713deabeb16ee80800000000000000
+      internalID: -8149795776615999545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 11174008f0ffd9b06bed6342d49dbbc6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      fogata_0: -7096628384563705272
+      fogata_1: 3748657124823810633
+      fogata_10: -9204414266249506241
+      fogata_11: -4126358449401490018
+      fogata_12: 1254405916425191552
+      fogata_13: 1318389881422995320
+      fogata_14: 8631437567744754280
+      fogata_15: -5769898619154907607
+      fogata_16: -6777551553702150096
+      fogata_17: 2086583701964777770
+      fogata_18: -2819293270489039215
+      fogata_19: 5905127740511360800
+      fogata_2: -439847511589994268
+      fogata_20: -2471505315673192395
+      fogata_21: -8149795776615999545
+      fogata_3: -6269673613530879418
+      fogata_4: -1546432195013514474
+      fogata_5: 1153667714200978704
+      fogata_6: 1660312746175797835
+      fogata_7: 4450862376338927464
+      fogata_8: 9044400333706050920
+      fogata_9: -1546944188226308053
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -30,10 +30,20 @@ namespace AshesOfRyu
             ContactDamage *= difficultyScale;
         }
 
+        public void SetMoveSpeed(float speed)
+        {
+            moveSpeed = speed;
+        }
+
+        /// <summary>
+        /// Los enemigos de relleno pueden desactivar el texto de dano.
+        /// </summary>
+        protected virtual bool ShowsDamageText => true;
+
         protected abstract float BaseHealth();
         protected abstract Vector2 GetMoveDirection();
 
-        private void FixedUpdate()
+        protected virtual void FixedUpdate()
         {
             Vector2 move = GetMoveDirection() * moveSpeed;
             if (knockback.sqrMagnitude > 0.04f)
@@ -41,7 +51,13 @@ namespace AshesOfRyu
                 move = knockback;
                 knockback = Vector2.Lerp(knockback, Vector2.zero, Time.fixedDeltaTime * 8f);
             }
-            rb.MovePosition(rb.position + move * Time.fixedDeltaTime);
+            Vector2 nextPosition = rb.position + move * Time.fixedDeltaTime;
+            rb.MovePosition(ClampPosition(nextPosition));
+        }
+
+        protected virtual Vector2 ClampPosition(Vector2 position)
+        {
+            return position;
         }
 
         private void OnTriggerEnter2D(Collider2D other)
@@ -62,7 +78,8 @@ namespace AshesOfRyu
                 return;
             }
             knockback = info.Knockback;
-            FloatingText.Spawn(transform.position, Mathf.RoundToInt(info.Amount).ToString(), Color.yellow, 48f);
+            if (ShowsDamageText)
+                FloatingText.Spawn(transform.position, Mathf.RoundToInt(info.Amount).ToString(), Color.yellow, 48f);
             VFX.HitSpark(transform.position);
         }
 
@@ -70,10 +87,26 @@ namespace AshesOfRyu
         {
             if (died) return;
             died = true;
-            if (UnityEngine.Random.Range(0, 100) < MemoryDropChance) MemoryFragment.Create(transform.position);
-            VFX.Explosion(transform.position, 0.9f);
+            Vector2 deathPosition = transform.position;
+            if (ShouldDropMemory() && UnityEngine.Random.Range(0, 100) < MemoryDropChance)
+                MemoryFragment.Create(deathPosition);
+            VFX.Explosion(deathPosition, 0.9f);
+            OnDeath(deathPosition);
             Died?.Invoke(this);
             Destroy(gameObject);
+        }
+
+        /// <summary>
+        /// Punto de extension para que enemigos concretos suelten recompensas propias.
+        /// Se invoca justo antes de destruir el objeto.
+        /// </summary>
+        protected virtual void OnDeath(Vector2 deathPosition)
+        {
+        }
+
+        protected virtual bool ShouldDropMemory()
+        {
+            return true;
         }
 
         protected static T Spawn<T>(string name, Vector2 pos, Transform parent, Color color, float colliderRadius,
