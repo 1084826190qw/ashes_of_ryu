@@ -17,6 +17,7 @@ namespace AshesOfRyu
             new Vector2(28.0f, -10.5f),
             new Vector2(37.5f, 4.0f),
             new Vector2(55.0f, -5.0f),
+            new Vector2(50.49f, 5.5f),
         };
 
         // Algunos esqueletos son los que lanzan huesos.
@@ -30,6 +31,7 @@ namespace AshesOfRyu
             false,
             true,
             false,
+            true,
         };
 
         private Transform container;

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.Rendering.Universal;
 
 namespace AshesOfRyu
@@ -88,6 +89,12 @@ namespace AshesOfRyu
         private void Update()
         {
             UpdateMusic();
+
+            var keyboard = Keyboard.current;
+            if (keyboard != null && keyboard.escapeKey.wasPressedThisFrame)
+            {
+                UnityEngine.SceneManagement.SceneManager.LoadScene("2_scene_menu");
+            }
         }
 
         private void UpdateMusic()
